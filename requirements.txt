@@ -1,0 +1,35 @@
+# Python 3.10+ (developed on 3.13). torch is installed separately (CPU build):
+#   pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
+# stream backbone
+confluent-kafka==2.11.1
+# vision / models
+opencv-python-headless==4.11.0.86
+transformers==4.56.2
+accelerate==1.10.1
+sentence-transformers==5.1.1
+google-genai==1.38.0
+# retrieval / KG / windows
+faiss-cpu==1.12.0
+rank-bm25==0.2.2
+networkx==3.6.1
+pyvis==0.3.2
+river==0.22.0
+langchain-core==0.3.76
+# monitoring
+prometheus-client==0.23.1
+opentelemetry-api==1.37.0
+opentelemetry-sdk==1.37.0
+psutil==7.1.0
+# dashboard
+streamlit==1.50.0
+# analysis
+numpy>=2.0
+pandas==2.3.3
+scipy==1.16.2
+scikit-learn==1.7.2
+matplotlib==3.10.6
+# misc
+pyyaml==6.0.3
+python-dotenv==1.1.1
+requests==2.32.5
+pytest==8.4.2

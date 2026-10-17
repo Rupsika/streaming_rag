@@ -1,0 +1,3 @@
+# Ablation of B3 (plan.md §5): no_backfill. Merged on top of baselines/b3.yaml by run_experiment.py.
+base: baselines/b3.yaml
+windowing: {backfill: false}

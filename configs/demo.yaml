@@ -1,0 +1,3 @@
+# Live demo: B3 at native speed with LLM feedback into the windowing FSM (EVENT state).
+base: baselines/b3.yaml
+windowing: {feedback: true}

@@ -1,0 +1,205 @@
+{
+  "run_id": "b1-main",
+  "config": "b1",
+  "dataset": "devset",
+  "n_videos": 14,
+  "speed": 0.0,
+  "warnings": [
+    "FALLBACK TEST SET: 16 dev clips (UCF-Crime test videos not on disk)",
+    "12 positive videos lack GT start/end -> excluded from event-level metrics; fill data/annotations_devset.csv event_start_s/event_end_s: ['cctv_compilation_acc_ved', 'cctv_intersection_cr', 'dashcam_collision_with_motorcycle_1', 'dashcam_faizy_sample_traffic', 'dashcam_faizy_sample_traffic_2', 'dashcam_head_on_collision_10', 'dashcam_head_on_collision_109', 'dashcam_head_on_collision_114', 'dashcam_rollover_1', 'dashcam_rollover_106', 'dashcam_rollover_121', 'news_fire_or_explosions_20']"
+  ],
+  "video": {
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "f1": 0.923076923076923,
+    "accuracy": 0.8571428571428571,
+    "tp": 12,
+    "fp": 2,
+    "fn": 0,
+    "tn": 0,
+    "f1_ci95": [
+      0.782608695652174,
+      1.0
+    ],
+    "acc_ci95": [
+      0.6428571428571429,
+      1.0
+    ],
+    "type_accuracy_on_detected": 0.9166666666666666
+  },
+  "per_video": {
+    "cctv_compilation_acc_ved": {
+      "gt": "vehicle_collision",
+      "pred_events": [
+        "vehicle_collision",
+        "vehicle_collision",
+        "fire_explosion",
+        "fire_explosion",
+        "vehicle_collision",
+        "fire_explosion",
+        "vehicle_collision",
+        "vehicle_collision"
+      ],
+      "correct": true
+    },
+    "cctv_intersection_cr": {
+      "gt": "vehicle_collision",
+      "pred_events": [
+        "vehicle_collision",
+        "fire_explosion"
+      ],
+      "correct": true
+    },
+    "dashcam_collision_with_motorcycle_1": {
+      "gt": "vehicle_collision",
+      "pred_events": [
+        "vehicle_collision"
+      ],
+      "correct": true
+    },
+    "dashcam_faizy_sample_traffic": {
+      "gt": "vehicle_collision",
+      "pred_events": [
+        "vehicle_collision"
+      ],
+      "correct": true
+    },
+    "dashcam_faizy_sample_traffic_2": {
+      "gt": "vehicle_collision",
+      "pred_events": [
+        "vehicle_collision",
+        "vehicle_collision",
+        "vehicle_collision"
+      ],
+      "correct": true
+    },
+    "dashcam_head_on_collision_10": {
+      "gt": "vehicle_collision",
+      "pred_events": [
+        "vehicle_collision"
+      ],
+      "correct": true
+    },
+    "dashcam_head_on_collision_109": {
+      "gt": "vehicle_collision",
+      "pred_events": [
+        "fire_explosion"
+      ],
+      "correct": true
+    },
+    "dashcam_head_on_collision_114": {
+      "gt": "vehicle_collision",
+      "pred_events": [
+        "fire_explosion",
+        "vehicle_collision"
+      ],
+      "correct": true
+    },
+    "dashcam_rollover_1": {
+      "gt": "rollover",
+      "pred_events": [
+        "vehicle_collision"
+      ],
+      "correct": true
+    },
+    "dashcam_rollover_106": {
+      "gt": "rollover",
+      "pred_events": [
+        "vehicle_collision",
+        "vehicle_collision"
+      ],
+      "correct": true
+    },
+    "dashcam_rollover_121": {
+      "gt": "rollover",
+      "pred_events": [
+        "vehicle_collision"
+      ],
+      "correct": true
+    },
+    "news_fire_or_explosions_20": {
+      "gt": "fire_explosion",
+      "pred_events": [
+        "vehicle_collision",
+        "fire_explosion"
+      ],
+      "correct": true
+    },
+    "dashcam_negative_samples_10": {
+      "gt": "none",
+      "pred_events": [
+        "vehicle_collision"
+      ],
+      "correct": false
+    },
+    "intel_car-detection": {
+      "gt": "none",
+      "pred_events": [
+        "vehicle_collision",
+        "vehicle_collision",
+        "vehicle_collision"
+      ],
+      "correct": false
+    }
+  },
+  "event": {
+    "n_videos_with_times": 2,
+    "n_gt_segments": 0,
+    "n_pred_events": 4,
+    "recall": null,
+    "precision": 0.0,
+    "short_event_recall": null,
+    "n_short": 0,
+    "type_accuracy": null,
+    "detection_delay_s": {
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "alert_latency_s": {
+      "p50": null,
+      "p95": null
+    },
+    "alert_latency_note": "meaningful only for real-time runs (speed=1)",
+    "false_alarms_per_hour_normal": 382.70729978738484
+  },
+  "frame_auc": null,
+  "efficiency": {
+    "video_seconds": 197.50080625634945,
+    "frames_ingested": 5396,
+    "keyframes_to_vlm": 402,
+    "frame_processing_ratio": 0.07449962935507784,
+    "vlm_keyframes_per_min": 122.12608372187121,
+    "vlm_seconds_per_keyframe": {
+      "p50": 11.684,
+      "p95": 15.625900000000001
+    },
+    "windows": 402,
+    "llm_seconds_per_window": {
+      "p50": 12.713000000000001,
+      "p95": 19.7274
+    }
+  },
+  "streaming": {
+    "wall_seconds": 5143.38,
+    "sustained_fps": 1.0491155621400714,
+    "realtime_factor": 0.03839903064839647,
+    "window_latency_s": {
+      "p50": 2475.772086262703,
+      "p95": 4903.926027011871
+    },
+    "peak_gpu_mem_mb": null,
+    "peak_rss_mb": 18.8,
+    "cpu_percent_mean": 0.0,
+    "note": "CPU only (no CUDA): GPU memory not applicable"
+  },
+  "retrieval": {
+    "p_at_5": 0.5805970149253731,
+    "r_at_5": 0.026677810232943737,
+    "n_queries": 402,
+    "label_source": "video-level labels for clips without GT times"
+  },
+  "explain": {
+    "n_events": 0
+  }
+}

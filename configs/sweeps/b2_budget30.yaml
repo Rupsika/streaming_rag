@@ -1,0 +1,3 @@
+# RQ3 budget sweep (plan.md §7.3): b2 at 30 VLM keyframes/min.
+base: baselines/b2.yaml
+windowing: {vlm_budget_per_min: 30}

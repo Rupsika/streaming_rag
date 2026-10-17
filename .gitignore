@@ -1,0 +1,24 @@
+# environments / secrets
+.venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# large or non-redistributable data (see data/README.md)
+data/**/*.mp4
+data/**/*.avi
+data/ucf_crime/videos/
+data/tad/
+
+# model weights, caches, per-run artefacts
+cache/
+*.sqlite
+*.pt
+*.safetensors
+*.index
+runs/
+
+# copyrighted papers and course documents
+papers/*.pdf
+docs/

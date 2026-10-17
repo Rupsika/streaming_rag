@@ -1,0 +1,8 @@
+# B1: StreamingRAG re-implementation (plan.md §5) - fixed 2 fps keyframes + VQG question bank,
+# KG, frame-level kNN over single keyframe texts (top-5), no windows, no explainability.
+windowing: {mode: frame, frame_rate: 2.0}
+retrieval: {level: frame, hybrid: false, rerank: false, sequence_context: 0, use_clip: false,
+            case_library_k: 5, session_k: 0}
+explain: {enabled: false}
+# decision = label probabilities only; skip the ~30 s/window explanation text on CPU
+llm: {generate: false}

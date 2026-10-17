@@ -1,0 +1,135 @@
+# X-StreamRAG default configuration. Every threshold, model and budget lives here.
+# Baseline configs in configs/baselines/ override only the keys they change.
+# Hardware this was tuned for: i5-1340P, 16 GB RAM, Intel Iris Xe (no CUDA), Windows 11.
+
+run:
+  seed: 42
+  runs_dir: runs
+  results_dir: results
+
+kafka:
+  bootstrap: localhost:19092          # Redpanda external listener (docker-compose.yml)
+  topics:
+    frames_raw: frames.raw
+    frames_signal: frames.signal
+    windows_keyframes: windows.keyframes
+    windows_closed: windows.closed
+    events_detected: events.detected
+    events_explained: events.explained
+  partitions: 1
+  max_message_bytes: 4194304
+  namespace: ""                       # topic/group prefix; run_experiment.py sets it to the run id
+
+stream:                               # plan.md §2.3 / §4 M1
+  width: 640
+  jpeg_quality: 85
+  speed: 1.0                          # replay speed; 2/4 for stress tests, 0 = as fast as possible
+  max_seconds: 180                    # cap long normal videos (plan.md §2.2: first 3 min)
+
+signal:                               # plan.md §4 M2
+  sample_fps: 10
+  clip_model: openai/clip-vit-base-patch32
+  w_semantic: 0.6
+  w_pixel: 0.4
+  batch_size: 8
+
+windowing:                            # plan.md §4 M3
+  mode: adaptive                      # adaptive (B3) | fixed (B2) | frame (B1)
+  adwin_delta: 0.002
+  k_sigma: 3.0
+  calm_exit_sigma: 1.0
+  calm_exit_seconds: 10
+  stats_seconds: 30
+  keyframe_rate: {CALM: 0.5, ALERT: 2.0, EVENT: 4.0}   # VLM keyframes / s per state
+  max_len: {CALM: 16.0, ALERT: 4.0, EVENT: 2.0}
+  min_len: 1.0
+  ring_buffer_seconds: 3.0
+  backfill_top: 2
+  fixed_window_s: 4.0                 # B2: W in {2,4,8}, step W/6
+  fixed_step_div: 6                   # B2 step = W / 6 (TD-RAG: 6 h window, 1 h step)
+  frame_rate: 2.0                     # B1: fixed 2 fps keyframes
+  vlm_budget_per_min: 60              # fair-budget rule (plan.md §5): B2 uniform rate, B3 token bucket
+  budget_burst_s: 20                  # B3 token bucket capacity (seconds of budget)
+  backfill: true                      # B3 pre-event back-fill (ablation: false)
+  adwin_clock: 8                      # river ADWIN checks for change every n updates
+  warmup_s: 2.0                       # no z-score trigger before 2 s of statistics
+  min_rise: 0.02                      # z-trigger also needs a_t - mean > 0.02 (static scenes have tiny σ)
+  feedback: false                     # read LLM verdicts back (EVENT state); live demo only
+
+vlm:                                  # plan.md §4 M4
+  backend: smolvlm                    # smolvlm | gemini | blip2
+  model: HuggingFaceTB/SmolVLM-256M-Instruct
+  image_size: 512
+  max_questions: 5
+  vqg_memory_s: 4.0
+  rpm: 10                             # gemini only: client-side rate limit
+  cache_path: cache/vlm_cache.sqlite
+
+llm:                                  # plan.md §4 M8
+  backend: hf                         # hf (local transformers) | gemini | ollama
+  model: Qwen/Qwen2.5-1.5B-Instruct    # 0.5B ignored the evidence: P(collision)>0.99 on calm scenes
+  max_new_tokens: 160
+  explain_threshold: 0.3              # generate the cited JSON only if P(event) >= this (or top label != none)
+  rpm: 10                             # gemini only
+  temperature: 0.0
+  self_consistency_n: 5               # API backend: confidence = agreement of n samples @ T=0.7
+  self_consistency_temperature: 0.7
+  cache_path: cache/llm_cache.sqlite
+
+embedder:                             # plan.md §4 M6
+  text_model: BAAI/bge-small-en-v1.5
+  w_text: 0.7
+  w_clip: 0.3
+
+retrieval:                            # plan.md §4 M6-M7
+  level: window                       # window (B2/B3) | frame (B1: frame-level kNN)
+  hybrid: true                        # + BM25 (B3)
+  rerank: true                        # cross-encoder rerank (B3)
+  use_clip: true                      # fused text+CLIP similarity
+  kg_context: true                    # KG 1-hop triples as evidence
+  exclude_same_video: true            # never retrieve windows of the query video
+  max_current_units: 8
+  min_current_units: 2
+  unit_chars: 300
+  case_library_k: 10
+  session_k: 5
+  bm25_k: 5
+  final_k: 8
+  report_k: 5
+  session_recency_s: 600
+  sequence_context: 2
+  reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+  case_library_dir: cache/case_library
+  hnsw_m: 32
+
+kg_ttl_s: 120                         # StreamingRAG-style KG reset: prune nodes older than 120 s
+
+events:                               # plan.md §4 M8 event logic
+  open_threshold: 0.5
+  open_votes: 2
+  open_window: 3
+  close_after_none: 2
+
+explain:                              # plan.md §4 M9
+  enabled: true
+  k_values: [1, 2, 3]
+  random_seeds: 5
+  regenerate: false                   # E4: true also re-generates explanations (Δcoverage, drift; slow on CPU)
+  kg_perturb: true                    # E5
+  nli_model: cross-encoder/nli-deberta-v3-small
+  drift_recent_s: 60
+  drift_ref_s: 600
+  drift_threshold: 0.15
+
+kb_path: kb/traffic_kb.yaml
+
+telemetry:
+  # one Prometheus /metrics port per service; prometheus/prometheus.yml scrapes these
+  ports:
+    producer: 8001
+    signal: 8002
+    windowing: 8003
+    vlm: 8004
+    rag: 8005
+    explain: 8006
+  otel_exporter: console              # console | otlp | none

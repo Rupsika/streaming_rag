@@ -1,0 +1,4 @@
+# B2 (W=8 s): fixed TD-RAG-style windows of W s with step W/6 (plan.md §4 M3), uniform keyframes at the
+# same VLM budget as B3; window-level dense kNN top-5 with session recency, no BM25/rerank/sequence.
+windowing: {mode: fixed, fixed_window_s: 8.0}
+retrieval: {level: window, hybrid: false, rerank: false, sequence_context: 0, case_library_k: 5, session_k: 5}

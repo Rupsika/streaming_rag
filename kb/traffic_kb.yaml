@@ -1,0 +1,59 @@
+# Hand-written knowledge base (StreamingRAG §3 builds its KB manually too).
+# Used by the Visual Query Generator (xstream/vqg.py), the VQA->triple rules
+# (xstream/kg.py) and the LLM prompt (event templates).
+
+entity_types: [vehicle, person, motorcycle, fire, smoke, road, crowd]
+relations: [near, collides_with, lying_on, leaves, on_fire, damaged, overturned, gathering]
+
+# Question bank (plan.md §4 M4). `kind: yesno` answers are scored as P(yes) vs P(no);
+# `kind: count` answers are short generations.
+questions:
+  q_count:     {text: "How many vehicles are visible?", kind: count}
+  q_damaged:   {text: "Is any vehicle damaged or overturned?", kind: yesno, hazard: true}
+  q_person:    {text: "Is a person lying on the road?", kind: yesno, hazard: true}
+  q_touching:  {text: "Are two vehicles touching each other?", kind: yesno, hazard: true}
+  q_smoke:     {text: "Is there smoke or fire?", kind: yesno, hazard: true}
+  q_running:   {text: "Are people running or gathering?", kind: yesno, hazard: true}
+  q_leaving:   {text: "Is any vehicle moving away quickly?", kind: yesno}
+  # follow-ups only asked by the VQG
+  q_person_near: {text: "Is a person lying near the vehicles?", kind: yesno, hazard: true}
+  q_fire:      {text: "Is there an open fire or explosion?", kind: yesno, hazard: true}
+  q_overturned: {text: "Is a vehicle lying on its side or roof?", kind: yesno, hazard: true}
+
+# Asked on every keyframe until the VQG has state (StreamingRAG keeps <= 5 per prompt).
+base_questions: [q_touching, q_damaged, q_person, q_smoke, q_count]
+
+# Visual Query Generator rules: if `if_yes` was answered yes on a recent keyframe of
+# this stream, ask `ask` next (StreamingRAG §3: Q_{t+k} = VQG(S_t, KB)).
+vqg_rules:
+  - {if_yes: q_touching, ask: [q_person_near, q_leaving]}
+  - {if_yes: q_damaged,  ask: [q_overturned, q_person_near]}
+  - {if_yes: q_smoke,    ask: [q_fire, q_running]}
+  - {if_yes: q_person,   ask: [q_running, q_leaving]}
+  - {if_yes: q_person_near, ask: [q_leaving]}
+
+# VQA answer -> KG triple (plan.md §4 M5).
+triple_rules:
+  q_touching:    [vehicle_1, collides_with, vehicle_2]
+  q_damaged:     [vehicle_1, damaged, road]
+  q_overturned:  [vehicle_1, overturned, road]
+  q_person:      [person_1, lying_on, road]
+  q_person_near: [person_1, lying_on, road]
+  q_smoke:       [smoke_1, near, road]
+  q_fire:        [fire_1, on_fire, vehicle_1]
+  q_running:     [crowd_1, gathering, road]
+  q_leaving:     [vehicle_2, leaves, road]
+
+# Event templates: ordered stages (used for the `sequence` field and the prompt).
+event_templates:
+  vehicle_collision: [approach, impact, vehicles_stopped]
+  vehicle_pedestrian_collision: [approach, impact, person_down]
+  hit_and_run: [impact, person_down, vehicle_leaves]
+  rollover: [loss_of_control, overturned]
+  fire_explosion: [smoke, fire]
+  people_commotion: [gathering, running]
+
+standing_queries:
+  - Alert on a collision between vehicles and/or people.
+  - Notify when pedestrians in distress are spotted.
+  - Report fire or explosions.

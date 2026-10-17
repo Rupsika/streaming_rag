@@ -1,0 +1,4 @@
+# B3: X-StreamRAG full - adaptive windows (ADWIN + FSM + back-fill), sequence context,
+# hybrid dense+BM25+KG retrieval, cross-encoder rerank, explainability.
+windowing: {mode: adaptive}
+retrieval: {level: window, hybrid: true, rerank: true, sequence_context: 2}

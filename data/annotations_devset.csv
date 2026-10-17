@@ -1,0 +1,17 @@
+video,split,viewpoint,width,height,fps,duration_s,event_type,event_start_s,event_end_s,stages,notes
+videos/accident/cctv_compilation_acc_ved.mp4,accident,cctv,640,360,30.0,76.6,multiple_collisions,,,,TODO annotate start/end
+videos/accident/cctv_intersection_cr.mp4,accident,cctv,1920,1080,29.97,13.16,vehicle_vehicle_collision,,,,TODO annotate start/end
+videos/accident/dashcam_collision_with_motorcycle_1.mp4,accident,dashcam,1280,720,30.0,5.67,vehicle_motorcycle_collision,,,,TODO annotate start/end
+videos/accident/dashcam_faizy_sample_traffic.mp4,accident,dashcam,1280,720,30.0,11.93,vehicle_vehicle_collision,,,,TODO annotate start/end
+videos/accident/dashcam_faizy_sample_traffic_2.mp4,accident,dashcam,1280,720,30.0,17.33,vehicle_vehicle_collision,,,,TODO annotate start/end
+videos/accident/dashcam_head_on_collision_10.mp4,accident,dashcam,1280,720,29.97,5.24,vehicle_vehicle_collision,,,,TODO annotate start/end
+videos/accident/dashcam_head_on_collision_109.mp4,accident,dashcam,1280,720,29.83,3.02,vehicle_vehicle_collision,,,,TODO annotate start/end
+videos/accident/dashcam_head_on_collision_114.mp4,accident,dashcam,1280,720,30.0,6.2,vehicle_vehicle_collision,,,,TODO annotate start/end
+videos/accident/dashcam_rollover_1.mp4,accident,dashcam,1280,720,30.0,5.67,rollover,,,,TODO annotate start/end
+videos/accident/dashcam_rollover_106.mp4,accident,dashcam,1280,720,30.0,4.43,rollover,,,,TODO annotate start/end
+videos/accident/dashcam_rollover_121.mp4,accident,dashcam,1280,720,30.0,5.1,rollover,,,,TODO annotate start/end
+videos/accident/news_fire_or_explosions_20.mp4,accident,news,1280,720,29.97,5.67,fire_explosion,,,,TODO annotate start/end
+videos/normal/dashcam_negative_samples_10.mp4,normal,dashcam,1280,720,30.0,7.47,none,,,,
+videos/normal/intel_car-detection.mp4,normal,fixed_cam,768,432,12.5,30.16,none,,,,
+videos/normal/intel_people-detection.mp4,normal,fixed_cam,768,432,12.0,49.67,none,,,,
+videos/normal/intel_person-bicycle-car-detection.mp4,normal,fixed_cam,768,432,12.0,53.92,none,,,,

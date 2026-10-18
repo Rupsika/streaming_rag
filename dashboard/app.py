@@ -22,7 +22,6 @@ from pathlib import Path
 
 import altair as alt
 import pandas as pd
-import requests
 import streamlit as st
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -126,15 +125,16 @@ def gt_segments(source: str) -> list[tuple[float, float]]:
 
 # ---------------------------------------------------------------- UI
 runs = sorted([p for p in (ROOT / "runs").glob("*") if p.is_dir()], key=lambda p: p.stat().st_mtime, reverse=True)
+# default to the newest run that has recorded data (an idle runs/live is just empty files)
+default = next((i for i, p in enumerate(runs) if any((p / "signal").glob("*.csv"))), 0)
 with st.sidebar:
     st.title("X-StreamRAG")
-    choice = st.selectbox("Run", [p.name for p in runs] or ["live"])
+    choice = st.selectbox("Run", [p.name for p in runs] or ["live"], index=default if runs else 0)
     run_dir = ROOT / "runs" / choice
     manifest = json.loads((run_dir / "manifest.json").read_text()) if (run_dir / "manifest.json").exists() else {}
     namespace = st.text_input("Kafka namespace", manifest.get("namespace", ""))
     use_kafka = st.toggle("Live from Kafka", value=not manifest.get("completed", False))
     auto = st.toggle("Auto-refresh (1 s)", value=use_kafka)
-    prom_url = st.text_input("Prometheus", "http://localhost:9090")
 
 data = load_run(run_dir)
 if use_kafka:
@@ -283,22 +283,6 @@ with right:
                 st.components.v1.html(net.generate_html(), height=340)
         else:
             st.caption("explanation audit not available yet (explain service runs off the hot path)")
-
-# ---- bottom: live metrics from Prometheus
-st.divider()
-queries = {"FPS (signal)": 'xs_fps{stage="signal"}', "FPS (producer)": 'xs_fps{stage="producer"}',
-           "VLM calls/min": "sum(rate(xs_vlm_calls_total{kind=\"caption\"}[1m]))*60",
-           "window P95 (s)": 'histogram_quantile(0.95, sum(rate(xs_stage_latency_seconds_bucket{stage="rag"}[1m])) by (le))',
-           "alert latency P50 (s)": "histogram_quantile(0.5, sum(rate(xs_e2e_alert_latency_seconds_bucket[5m])) by (le))",
-           "frames→VLM ratio": "sum(xs_frames_to_vlm_total)/sum(xs_frames_ingested_total{stage=\"producer\"})"}
-cols = st.columns(len(queries))
-for c, (label, q) in zip(cols, queries.items()):
-    try:
-        r = requests.get(f"{prom_url}/api/v1/query", params={"query": q}, timeout=0.5).json()
-        val = r["data"]["result"][0]["value"][1] if r["data"]["result"] else "–"
-        c.metric(label, f"{float(val):.3g}" if val not in ("–", "NaN") else val)
-    except Exception:
-        c.metric(label, "n/a")
 
 if auto:
     time.sleep(1)

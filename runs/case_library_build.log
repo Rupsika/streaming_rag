@@ -1,0 +1,22 @@
+2026-10-17 16:24:36,754 FALLBACK: case library built from the dev clips (leave-one-video-out at query time)
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+2026-10-17 16:25:03,049 Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\.venv\Lib\site-packages\transformers\models\auto\modeling_auto.py:2242: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+2026-10-17 16:35:27,201 [1/16] cctv_compilation_acc_ved (vehicle_collision): 20 windows in 619.0s, vlm calls so far {'caption': 77, 'vqa': 385}, cache hits 0
+2026-10-17 16:37:29,295 [2/16] cctv_intersection_cr (vehicle_collision): 4 windows in 122.1s, vlm calls so far {'caption': 91, 'vqa': 455}, cache hits 0
+2026-10-17 16:38:22,145 [3/16] dashcam_collision_with_motorcycle_1 (vehicle_collision): 2 windows in 52.9s, vlm calls so far {'caption': 97, 'vqa': 485}, cache hits 0
+2026-10-17 16:39:37,531 [4/16] dashcam_faizy_sample_traffic (vehicle_collision): 3 windows in 75.4s, vlm calls so far {'caption': 109, 'vqa': 545}, cache hits 0
+2026-10-17 16:41:08,691 [5/16] dashcam_faizy_sample_traffic_2 (vehicle_collision): 5 windows in 91.2s, vlm calls so far {'caption': 127, 'vqa': 635}, cache hits 0
+2026-10-17 16:41:43,003 [6/16] dashcam_head_on_collision_10 (vehicle_collision): 2 windows in 34.3s, vlm calls so far {'caption': 133, 'vqa': 665}, cache hits 0
+2026-10-17 16:41:54,147 [7/16] dashcam_head_on_collision_109 (vehicle_collision): 1 windows in 11.1s, vlm calls so far {'caption': 135, 'vqa': 675}, cache hits 6
+2026-10-17 16:42:31,890 [8/16] dashcam_head_on_collision_114 (vehicle_collision): 2 windows in 37.7s, vlm calls so far {'caption': 142, 'vqa': 710}, cache hits 6
+2026-10-17 16:43:04,960 [9/16] dashcam_rollover_1 (rollover): 2 windows in 33.1s, vlm calls so far {'caption': 148, 'vqa': 740}, cache hits 6
+2026-10-17 16:43:35,964 [10/16] dashcam_rollover_106 (rollover): 2 windows in 31.0s, vlm calls so far {'caption': 153, 'vqa': 765}, cache hits 6
+2026-10-17 16:44:11,170 [11/16] dashcam_rollover_121 (rollover): 2 windows in 35.2s, vlm calls so far {'caption': 159, 'vqa': 795}, cache hits 6
+2026-10-17 16:44:43,090 [12/16] news_fire_or_explosions_20 (fire_explosion): 2 windows in 31.9s, vlm calls so far {'caption': 165, 'vqa': 825}, cache hits 6
+2026-10-17 16:45:20,904 [13/16] dashcam_negative_samples_10 (none): 2 windows in 37.8s, vlm calls so far {'caption': 173, 'vqa': 865}, cache hits 6
+2026-10-17 16:48:08,485 [14/16] intel_car-detection (none): 8 windows in 167.6s, vlm calls so far {'caption': 204, 'vqa': 1020}, cache hits 6
+2026-10-17 16:52:19,344 [15/16] intel_people-detection (none): 13 windows in 250.9s, vlm calls so far {'caption': 254, 'vqa': 1270}, cache hits 6
+2026-10-17 16:57:02,533 [16/16] intel_person-bicycle-car-detection (none): 14 windows in 283.2s, vlm calls so far {'caption': 308, 'vqa': 1540}, cache hits 6
+2026-10-17 16:57:12,886 case library: {'source': 'devset', 'videos': 16, 'windows': 84, 'frames': 309, 'window_s': 4.0, 'kf_per_s': 1.0, 'vlm': 'HuggingFaceTB/SmolVLM-256M-Instruct', 'labels': {'fire_explosion': 2, 'none': 37, 'rollover': 6, 'vehicle_collision': 39}, 'built_seconds': 1924.7, 'fallback': True}

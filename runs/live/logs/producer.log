@@ -1,0 +1,13 @@
+2026-10-18 17:51:34,450 xstream.telemetry metrics for producer on :8001/metrics
+%3|1792326096.477|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2025ms in state CONNECT)
+%3|1792326098.631|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2031ms in state CONNECT)
+%3|1792326100.747|FAIL|rdkafka#producer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2032ms in state CONNECT)
+%3|1792326102.802|FAIL|rdkafka#producer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2018ms in state CONNECT)
+2026-10-18 17:51:48,923 producer cctv_compilation_acc_ved: 300 frames, video_ts=10.0s, wall=10.2s
+2026-10-18 17:51:58,924 producer cctv_compilation_acc_ved: 600 frames, video_ts=20.0s, wall=20.2s
+2026-10-18 17:52:08,924 producer cctv_compilation_acc_ved: 900 frames, video_ts=30.0s, wall=30.2s
+2026-10-18 17:52:18,925 producer cctv_compilation_acc_ved: 1200 frames, video_ts=40.0s, wall=40.2s
+2026-10-18 17:52:29,928 producer cctv_compilation_acc_ved: 1500 frames, video_ts=50.0s, wall=51.2s
+2026-10-18 17:52:38,941 producer cctv_compilation_acc_ved: 1800 frames, video_ts=60.0s, wall=60.2s
+2026-10-18 17:52:48,937 producer cctv_compilation_acc_ved: 2100 frames, video_ts=70.0s, wall=70.2s
+2026-10-18 17:52:55,582 producer done cctv_compilation_acc_ved: 2298 frames | video 76.60s @ 30.00 native fps | wall 76.87s | achieved 29.89 fps (target 30.00) | run_id=20261018-175134

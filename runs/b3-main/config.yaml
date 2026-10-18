@@ -1,0 +1,127 @@
+run:
+  seed: 42
+  runs_dir: runs
+  results_dir: results
+kafka:
+  bootstrap: localhost:19092
+  topics:
+    frames_raw: frames.raw
+    frames_signal: frames.signal
+    windows_keyframes: windows.keyframes
+    windows_closed: windows.closed
+    events_detected: events.detected
+    events_explained: events.explained
+  partitions: 1
+  max_message_bytes: 4194304
+  namespace: b3-main-172142
+stream:
+  width: 640
+  jpeg_quality: 85
+  speed: 1.0
+  max_seconds: 180
+signal:
+  sample_fps: 10
+  clip_model: openai/clip-vit-base-patch32
+  w_semantic: 0.6
+  w_pixel: 0.4
+  batch_size: 8
+windowing:
+  mode: adaptive
+  adwin_delta: 0.002
+  k_sigma: 3.0
+  calm_exit_sigma: 1.0
+  calm_exit_seconds: 10
+  stats_seconds: 30
+  keyframe_rate:
+    CALM: 0.5
+    ALERT: 2.0
+    EVENT: 4.0
+  max_len:
+    CALM: 16.0
+    ALERT: 4.0
+    EVENT: 2.0
+  min_len: 1.0
+  ring_buffer_seconds: 3.0
+  backfill_top: 2
+  fixed_window_s: 4.0
+  fixed_step_div: 6
+  frame_rate: 2.0
+  vlm_budget_per_min: 60
+  budget_burst_s: 20
+  backfill: true
+  adwin_clock: 8
+  warmup_s: 2.0
+  min_rise: 0.02
+  feedback: false
+vlm:
+  backend: smolvlm
+  model: HuggingFaceTB/SmolVLM-256M-Instruct
+  image_size: 512
+  max_questions: 5
+  vqg_memory_s: 4.0
+  rpm: 10
+  cache_path: cache/vlm_cache.sqlite
+llm:
+  backend: hf
+  model: Qwen/Qwen2.5-1.5B-Instruct
+  max_new_tokens: 160
+  explain_threshold: 0.3
+  rpm: 10
+  temperature: 0.0
+  self_consistency_n: 5
+  self_consistency_temperature: 0.7
+  cache_path: cache/llm_cache.sqlite
+embedder:
+  text_model: BAAI/bge-small-en-v1.5
+  w_text: 0.7
+  w_clip: 0.3
+retrieval:
+  level: window
+  hybrid: true
+  rerank: true
+  use_clip: true
+  kg_context: true
+  exclude_same_video: true
+  max_current_units: 8
+  min_current_units: 2
+  unit_chars: 300
+  case_library_k: 10
+  session_k: 5
+  bm25_k: 5
+  final_k: 8
+  report_k: 5
+  session_recency_s: 600
+  sequence_context: 2
+  reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+  case_library_dir: cache/case_library
+  hnsw_m: 32
+kg_ttl_s: 120
+events:
+  open_threshold: 0.5
+  open_votes: 2
+  open_window: 3
+  close_after_none: 2
+explain:
+  enabled: true
+  k_values:
+  - 1
+  - 2
+  - 3
+  random_seeds: 5
+  regenerate: false
+  kg_perturb: true
+  nli_model: cross-encoder/nli-deberta-v3-small
+  drift_recent_s: 60
+  drift_ref_s: 600
+  drift_threshold: 0.15
+kb_path: kb/traffic_kb.yaml
+telemetry:
+  ports:
+    producer: 8001
+    signal: 8002
+    windowing: 8003
+    vlm: 8004
+    rag: 8005
+    explain: 8006
+  otel_exporter: console
+config_name: b3

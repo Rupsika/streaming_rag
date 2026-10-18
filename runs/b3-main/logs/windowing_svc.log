@@ -1,0 +1,25 @@
+%3|1792237918.289|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2027ms in state CONNECT)
+%3|1792237920.421|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2018ms in state CONNECT)
+2026-10-17 17:22:00,455 windowing INFO metrics for windowing on :8003/metrics
+2026-10-17 17:22:00,455 windowing INFO consuming ['b3-main-172142.frames.signal'] -> b3-main-172142.windows.keyframes
+%3|1792237922.471|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2028ms in state CONNECT)
+%3|1792237922.471|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2028ms in state CONNECT)
+%3|1792237924.641|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2041ms in state CONNECT)
+%3|1792237926.493|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2026ms in state CONNECT)
+%3|1792237926.777|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2022ms in state CONNECT)
+2026-10-17 17:23:08,380 windowing INFO EOS cctv_compilation_acc_ved
+2026-10-17 17:23:22,960 windowing INFO EOS cctv_intersection_cr
+2026-10-17 17:23:29,542 windowing INFO EOS dashcam_collision_with_motorcycle_1
+2026-10-17 17:23:40,084 windowing INFO EOS dashcam_faizy_sample_traffic
+2026-10-17 17:24:04,904 windowing INFO EOS dashcam_faizy_sample_traffic_2
+2026-10-17 17:24:11,394 windowing INFO EOS dashcam_head_on_collision_10
+2026-10-17 17:24:14,339 windowing INFO EOS dashcam_head_on_collision_109
+2026-10-17 17:24:21,357 windowing INFO EOS dashcam_head_on_collision_114
+2026-10-17 17:24:28,007 windowing INFO EOS dashcam_rollover_1
+2026-10-17 17:24:34,695 windowing INFO EOS dashcam_rollover_106
+2026-10-17 17:24:40,748 windowing INFO EOS dashcam_rollover_121
+2026-10-17 17:24:46,420 windowing INFO EOS news_fire_or_explosions_20
+2026-10-17 17:24:55,383 windowing INFO EOS dashcam_negative_samples_10
+2026-10-17 17:25:31,656 windowing INFO EOS intel_car-detection
+2026-10-17 17:26:37,513 windowing INFO EOS intel_people-detection
+2026-10-17 17:27:55,272 windowing INFO EOS intel_person-bicycle-car-detection

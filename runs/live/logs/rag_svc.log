@@ -1,0 +1,347 @@
+%3|1792326060.748|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2031ms in state CONNECT)
+%3|1792326062.897|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2044ms in state CONNECT)
+2026-10-18 17:51:02,980 rag INFO metrics for rag on :8005/metrics
+%3|1792326064.994|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2027ms in state CONNECT)
+%3|1792326064.994|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2027ms in state CONNECT)
+%3|1792326067.213|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2060ms in state CONNECT)
+%3|1792326069.033|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2038ms in state CONNECT)
+%3|1792326069.370|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2031ms in state CONNECT)
+2026-10-18 17:51:16,767 rag INFO case library: 84 window units
+2026-10-18 17:51:21,191 rag INFO consuming ['windows.closed'] -> events.detected
+{
+    "name": "encode",
+    "context": {
+        "trace_id": "0xc3da0409b1d1a666508f2f2893ab9f38",
+        "span_id": "0x21cfcd0e7c8aa5d8",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x2f043be39bbc0d18",
+    "start_time": "2026-10-18T12:21:53.887697Z",
+    "end_time": "2026-10-18T12:21:55.147687Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-rag"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "retrieve",
+    "context": {
+        "trace_id": "0xc3da0409b1d1a666508f2f2893ab9f38",
+        "span_id": "0xf429db6ba1a29cc3",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x2f043be39bbc0d18",
+    "start_time": "2026-10-18T12:21:55.147875Z",
+    "end_time": "2026-10-18T12:21:55.564516Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-rag"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "rerank",
+    "context": {
+        "trace_id": "0xc3da0409b1d1a666508f2f2893ab9f38",
+        "span_id": "0x591528aa80b7750f",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x2f043be39bbc0d18",
+    "start_time": "2026-10-18T12:21:55.565225Z",
+    "end_time": "2026-10-18T12:21:57.781172Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-rag"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "generate",
+    "context": {
+        "trace_id": "0xc3da0409b1d1a666508f2f2893ab9f38",
+        "span_id": "0xa0d86c9ba204eff3",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x2f043be39bbc0d18",
+    "start_time": "2026-10-18T12:21:57.781377Z",
+    "end_time": "2026-10-18T12:21:57.784503Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-rag"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xc3da0409b1d1a666508f2f2893ab9f38",
+        "span_id": "0x2f043be39bbc0d18",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-18T12:21:53.887479Z",
+    "end_time": "2026-10-18T12:21:57.784553Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-rag"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "encode",
+    "context": {
+        "trace_id": "0x5051c0cc300d9f7f7ae4cc522710a0ff",
+        "span_id": "0x43caf260daa5d0fb",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x4939de7373d2a957",
+    "start_time": "2026-10-18T12:23:35.754619Z",
+    "end_time": "2026-10-18T12:23:36.089151Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-rag"
+        },
+        "schema_url": ""
+    }
+}
+`torch_dtype` is deprecated! Use `dtype` instead!
+{
+    "name": "retrieve",
+    "context": {
+        "trace_id": "0x5051c0cc300d9f7f7ae4cc522710a0ff",
+        "span_id": "0x4107363e45e863d8",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x4939de7373d2a957",
+    "start_time": "2026-10-18T12:23:36.089321Z",
+    "end_time": "2026-10-18T12:23:36.513174Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-rag"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "rerank",
+    "context": {
+        "trace_id": "0x5051c0cc300d9f7f7ae4cc522710a0ff",
+        "span_id": "0xf1bffa7c8ad444b1",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x4939de7373d2a957",
+    "start_time": "2026-10-18T12:23:36.513304Z",
+    "end_time": "2026-10-18T12:23:38.113674Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-rag"
+        },
+        "schema_url": ""
+    }
+}
+Traceback (most recent call last):
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\services\rag_svc.py", line 162, in <module>
+    main_for(RagService)
+    ~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\service.py", line 165, in main_for
+    sys.exit(cls(cfg, args).run())
+             ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\service.py", line 151, in run
+    self.handle(m)
+    ~~~~~~~~~~~^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\services\rag_svc.py", line 126, in handle
+    pred = self.gen.predict(header, units, w["t0"], w["t1"])
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\generate.py", line 237, in predict
+    p = self.probs(header, units)
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\generate.py", line 213, in probs
+    if hasattr(self.backend, "label_probs"):
+               ^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\generate.py", line 187, in backend
+    self._backend = build("llm", self.section)
+                    ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\backends.py", line 29, in build
+    return cls(section)
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\generate.py", line 83, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(section["model"], torch_dtype=torch.float32).eval()
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\.venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\.venv\Lib\site-packages\transformers\modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\.venv\Lib\site-packages\transformers\modeling_utils.py", line 5060, in from_pretrained
+    with safe_open(checkpoint_files[0], framework="pt") as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: The paging file is too small for this operation to complete. (os error 1455)
+{
+    "name": "generate",
+    "context": {
+        "trace_id": "0x5051c0cc300d9f7f7ae4cc522710a0ff",
+        "span_id": "0x1fb9b0ab951ce0a3",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x4939de7373d2a957",
+    "start_time": "2026-10-18T12:23:38.113845Z",
+    "end_time": "2026-10-18T12:23:42.374254Z",
+    "status": {
+        "status_code": "ERROR",
+        "description": "OSError: The paging file is too small for this operation to complete. (os error 1455)"
+    },
+    "attributes": {},
+    "events": [
+        {
+            "name": "exception",
+            "timestamp": "2026-10-18T12:23:42.374204Z",
+            "attributes": {
+                "exception.type": "OSError",
+                "exception.message": "The paging file is too small for this operation to complete. (os error 1455)",
+                "exception.stacktrace": "Traceback (most recent call last):\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\opentelemetry\\trace\\__init__.py\", line 589, in use_span\n    yield span\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\opentelemetry\\sdk\\trace\\__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\services\\rag_svc.py\", line 126, in handle\n    pred = self.gen.predict(header, units, w[\"t0\"], w[\"t1\"])\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\generate.py\", line 237, in predict\n    p = self.probs(header, units)\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\generate.py\", line 213, in probs\n    if hasattr(self.backend, \"label_probs\"):\n               ^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\generate.py\", line 187, in backend\n    self._backend = build(\"llm\", self.section)\n                    ~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\backends.py\", line 29, in build\n    return cls(section)\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\generate.py\", line 83, in __init__\n    self.model = AutoModelForCausalLM.from_pretrained(section[\"model\"], torch_dtype=torch.float32).eval()\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\transformers\\models\\auto\\auto_factory.py\", line 604, in from_pretrained\n    return model_class.from_pretrained(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\transformers\\modeling_utils.py\", line 288, in _wrapper\n    return func(*args, **kwargs)\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\transformers\\modeling_utils.py\", line 5060, in from_pretrained\n    with safe_open(checkpoint_files[0], framework=\"pt\") as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nOSError: The paging file is too small for this operation to complete. (os error 1455)\n",
+                "exception.escaped": "False"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-rag"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x5051c0cc300d9f7f7ae4cc522710a0ff",
+        "span_id": "0x4939de7373d2a957",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-18T12:23:35.754491Z",
+    "end_time": "2026-10-18T12:23:42.378885Z",
+    "status": {
+        "status_code": "ERROR",
+        "description": "OSError: The paging file is too small for this operation to complete. (os error 1455)"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W2"
+    },
+    "events": [
+        {
+            "name": "exception",
+            "timestamp": "2026-10-18T12:23:42.378842Z",
+            "attributes": {
+                "exception.type": "OSError",
+                "exception.message": "The paging file is too small for this operation to complete. (os error 1455)",
+                "exception.stacktrace": "Traceback (most recent call last):\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\opentelemetry\\trace\\__init__.py\", line 589, in use_span\n    yield span\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\opentelemetry\\sdk\\trace\\__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\services\\rag_svc.py\", line 126, in handle\n    pred = self.gen.predict(header, units, w[\"t0\"], w[\"t1\"])\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\generate.py\", line 237, in predict\n    p = self.probs(header, units)\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\generate.py\", line 213, in probs\n    if hasattr(self.backend, \"label_probs\"):\n               ^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\generate.py\", line 187, in backend\n    self._backend = build(\"llm\", self.section)\n                    ~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\backends.py\", line 29, in build\n    return cls(section)\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\generate.py\", line 83, in __init__\n    self.model = AutoModelForCausalLM.from_pretrained(section[\"model\"], torch_dtype=torch.float32).eval()\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\transformers\\models\\auto\\auto_factory.py\", line 604, in from_pretrained\n    return model_class.from_pretrained(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\transformers\\modeling_utils.py\", line 288, in _wrapper\n    return func(*args, **kwargs)\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\transformers\\modeling_utils.py\", line 5060, in from_pretrained\n    with safe_open(checkpoint_files[0], framework=\"pt\") as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nOSError: The paging file is too small for this operation to complete. (os error 1455)\n",
+                "exception.escaped": "False"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-rag"
+        },
+        "schema_url": ""
+    }
+}

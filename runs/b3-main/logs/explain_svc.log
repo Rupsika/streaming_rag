@@ -1,0 +1,530 @@
+%3|1792243000.182|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2037ms in state CONNECT)
+%3|1792243002.300|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2020ms in state CONNECT)
+2026-10-17 18:46:42,394 explain INFO metrics for explain on :8006/metrics
+%3|1792243004.415|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2031ms in state CONNECT)
+%3|1792243004.415|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2032ms in state CONNECT)
+%3|1792243006.519|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2024ms in state CONNECT)
+%3|1792243008.449|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2022ms in state CONNECT)
+%3|1792243008.667|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2024ms in state CONNECT)
+2026-10-17 18:47:11,057 explain INFO consuming ['b3-main-172142.events.detected'] -> b3-main-172142.events.explained
+`torch_dtype` is deprecated! Use `dtype` instead!
+Traceback (most recent call last):
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\services\explain_svc.py", line 72, in <module>
+    main_for(ExplainService)
+    ~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\service.py", line 163, in main_for
+    sys.exit(cls(cfg, args).run())
+             ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\service.py", line 149, in run
+    self.handle(m)
+    ~~~~~~~~~~~^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\services\explain_svc.py", line 60, in handle
+    rec["explain"] = explain_event(self.gen, self.nli, self.embedder, self.cfg, pv["header"], units, label,
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                   pv.get("explanation", ""), pv["t0"], pv["t1"])
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\explain\__init__.py", line 21, in explain_event
+    base_p, weights = leave_one_out(probs_fn, units, label)                     # E1
+                      ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\explain\attribution.py", line 18, in leave_one_out
+    weights[u.id] = round(base - probs_fn(units[:i] + units[i + 1:])[label], 5)
+                                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\explain\__init__.py", line 20, in <lambda>
+    probs_fn = lambda us: gen.probs(header, us)
+                          ~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\generate.py", line 211, in probs
+    if hasattr(self.backend, "label_probs"):
+               ^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\generate.py", line 185, in backend
+    self._backend = build("llm", self.section)
+                    ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\backends.py", line 29, in build
+    return cls(section)
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\xstream\generate.py", line 81, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(section["model"], torch_dtype=torch.float32).eval()
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\.venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\.venv\Lib\site-packages\transformers\modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\.venv\Lib\site-packages\transformers\modeling_utils.py", line 5060, in from_pretrained
+    with safe_open(checkpoint_files[0], framework="pt") as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: The paging file is too small for this operation to complete. (os error 1455)
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0xbb420d920a9275d8a37052ff25a2d022",
+        "span_id": "0x09fc6b71713f4c5b",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T13:17:11.189072Z",
+    "end_time": "2026-10-17T13:17:16.308355Z",
+    "status": {
+        "status_code": "ERROR",
+        "description": "OSError: The paging file is too small for this operation to complete. (os error 1455)"
+    },
+    "attributes": {
+        "event.id": "cctv_compilation_acc_ved/E1"
+    },
+    "events": [
+        {
+            "name": "exception",
+            "timestamp": "2026-10-17T13:17:16.308287Z",
+            "attributes": {
+                "exception.type": "OSError",
+                "exception.message": "The paging file is too small for this operation to complete. (os error 1455)",
+                "exception.stacktrace": "Traceback (most recent call last):\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\opentelemetry\\trace\\__init__.py\", line 589, in use_span\n    yield span\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\opentelemetry\\sdk\\trace\\__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\services\\explain_svc.py\", line 60, in handle\n    rec[\"explain\"] = explain_event(self.gen, self.nli, self.embedder, self.cfg, pv[\"header\"], units, label,\n                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                   pv.get(\"explanation\", \"\"), pv[\"t0\"], pv[\"t1\"])\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\explain\\__init__.py\", line 21, in explain_event\n    base_p, weights = leave_one_out(probs_fn, units, label)                     # E1\n                      ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\explain\\attribution.py\", line 18, in leave_one_out\n    weights[u.id] = round(base - probs_fn(units[:i] + units[i + 1:])[label], 5)\n                                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\explain\\__init__.py\", line 20, in <lambda>\n    probs_fn = lambda us: gen.probs(header, us)\n                          ~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\generate.py\", line 211, in probs\n    if hasattr(self.backend, \"label_probs\"):\n               ^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\generate.py\", line 185, in backend\n    self._backend = build(\"llm\", self.section)\n                    ~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\backends.py\", line 29, in build\n    return cls(section)\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\xstream\\generate.py\", line 81, in __init__\n    self.model = AutoModelForCausalLM.from_pretrained(section[\"model\"], torch_dtype=torch.float32).eval()\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\transformers\\models\\auto\\auto_factory.py\", line 604, in from_pretrained\n    return model_class.from_pretrained(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\transformers\\modeling_utils.py\", line 288, in _wrapper\n    return func(*args, **kwargs)\n  File \"C:\\Users\\rupsi\\OneDrive\\Desktop\\Projects\\streaming_rag\\.venv\\Lib\\site-packages\\transformers\\modeling_utils.py\", line 5060, in from_pretrained\n    with safe_open(checkpoint_files[0], framework=\"pt\") as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nOSError: The paging file is too small for this operation to complete. (os error 1455)\n",
+                "exception.escaped": "False"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+%3|1792243199.087|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2022ms in state CONNECT)
+%3|1792243201.261|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2045ms in state CONNECT)
+2026-10-17 18:50:01,283 explain INFO metrics for explain on :8006/metrics
+%3|1792243203.301|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2030ms in state CONNECT)
+%3|1792243203.301|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2031ms in state CONNECT)
+%3|1792243205.425|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2045ms in state CONNECT)
+%3|1792243207.326|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2029ms in state CONNECT)
+%3|1792243207.597|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2038ms in state CONNECT)
+2026-10-17 18:50:21,840 explain INFO consuming ['b3-main-172142.events.detected'] -> b3-main-172142.events.explained
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-10-17 18:54:19,481 explain INFO explained news_fire_or_explosions_20/E1 in 237.4s
+2026-10-17 18:54:19,534 explain INFO EOS news_fire_or_explosions_20
+2026-10-17 18:54:19,613 explain INFO EOS dashcam_negative_samples_10
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0xc67baaff6c635a1e688377d873392105",
+        "span_id": "0x72413d7f1b114a5f",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T13:20:22.049974Z",
+    "end_time": "2026-10-17T13:24:19.480686Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "news_fire_or_explosions_20/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+%4|1792243522.254|MAXPOLL|rdkafka#consumer-2| [thrd:main]: Application maximum poll interval (300000ms) exceeded by 205ms (adjust max.poll.interval.ms for long-running message processing): leaving group
+2026-10-17 18:57:54,133 explain INFO explained intel_car-detection/E1 in 214.5s
+2026-10-17 18:57:54,179 explain INFO EOS intel_car-detection
+2026-10-17 18:57:54,394 explain WARNING kafka error: KafkaError{code=_MAX_POLL_EXCEEDED,val=-147,str="Application maximum poll interval (300000ms) exceeded by 205ms"}
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0x6d71f872af830f11106939a542d0be0a",
+        "span_id": "0x49a09a4c942ee510",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T13:24:19.615568Z",
+    "end_time": "2026-10-17T13:27:54.133505Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "intel_car-detection/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+usage: explain_svc.py [-h] [--config CONFIG] [--run-id RUN_ID]
+                      [--namespace NAMESPACE] [--no-metrics]
+                      [--group-suffix GROUP_SUFFIX]
+explain_svc.py: error: argument --group-suffix: expected one argument
+%3|1792246985.741|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2042ms in state CONNECT)
+%3|1792246987.903|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2050ms in state CONNECT)
+2026-10-17 19:53:08,065 explain INFO metrics for explain on :8006/metrics
+%3|1792246990.004|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2014ms in state CONNECT)
+%3|1792246990.004|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2013ms in state CONNECT)
+%3|1792246992.144|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2048ms in state CONNECT)
+%3|1792246994.044|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2025ms in state CONNECT)
+%3|1792246994.329|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2061ms in state CONNECT)
+2026-10-17 19:54:08,939 explain INFO consuming ['b3-main-172142.events.detected'] -> b3-main-172142.events.explained
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-10-17 19:57:30,485 explain INFO explained cctv_compilation_acc_ved/E1 in 201.4s
+2026-10-17 19:57:30,534 explain INFO EOS cctv_compilation_acc_ved
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0x6aa82b113b40faeafba8f5d177869255",
+        "span_id": "0x8df775cef904f362",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T14:24:09.049938Z",
+    "end_time": "2026-10-17T14:27:30.485132Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "cctv_compilation_acc_ved/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+%3|1792247317.590|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2024ms in state CONNECT)
+%3|1792247319.738|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2036ms in state CONNECT)
+2026-10-17 19:58:39,772 explain INFO metrics for explain on :8006/metrics
+%3|1792247321.792|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2030ms in state CONNECT)
+%3|1792247321.792|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2031ms in state CONNECT)
+%3|1792247323.905|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2034ms in state CONNECT)
+%3|1792247325.808|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2015ms in state CONNECT)
+%3|1792247326.022|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2020ms in state CONNECT)
+2026-10-17 19:59:01,591 explain INFO consuming ['b3-main-172142.events.detected'] -> b3-main-172142.events.explained
+2026-10-17 19:59:01,711 explain INFO explained cctv_compilation_acc_ved/E1 in 0.0s
+2026-10-17 19:59:01,758 explain INFO EOS cctv_compilation_acc_ved
+`torch_dtype` is deprecated! Use `dtype` instead!
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0xb7d8db08e5ffcbadbe01169ec20471e9",
+        "span_id": "0x7c36a2121e424e4e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T14:29:01.708878Z",
+    "end_time": "2026-10-17T14:29:01.711561Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "cctv_compilation_acc_ved/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 20:02:18,683 explain INFO explained cctv_intersection_cr/E1 in 196.9s
+2026-10-17 20:02:18,730 explain INFO EOS cctv_intersection_cr
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0x4f4b5e260952f4cf04880f430551c865",
+        "span_id": "0x031cfc682a18dbc6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T14:29:01.760417Z",
+    "end_time": "2026-10-17T14:32:18.683300Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "cctv_intersection_cr/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 20:06:21,916 explain INFO explained dashcam_collision_with_motorcycle_1/E1 in 243.2s
+2026-10-17 20:06:21,962 explain INFO EOS dashcam_collision_with_motorcycle_1
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0x3047fcf36e18efb19706cb0b68e07d13",
+        "span_id": "0xcc127bd6bda2ddea",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T14:32:18.730928Z",
+    "end_time": "2026-10-17T14:36:21.916494Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "dashcam_collision_with_motorcycle_1/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 20:10:22,628 explain INFO explained dashcam_faizy_sample_traffic/E1 in 240.7s
+2026-10-17 20:10:22,673 explain INFO EOS dashcam_faizy_sample_traffic
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0xf9e92eeb0c023a99c994aa87c0201f8a",
+        "span_id": "0xce8fbd852ac98aa1",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T14:36:21.963307Z",
+    "end_time": "2026-10-17T14:40:22.628122Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "dashcam_faizy_sample_traffic/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+%3|1792252994.095|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2039ms in state CONNECT)
+%3|1792252996.199|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2015ms in state CONNECT)
+2026-10-17 21:33:16,301 explain INFO metrics for explain on :8006/metrics
+%3|1792252998.326|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2047ms in state CONNECT)
+%3|1792252998.326|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2045ms in state CONNECT)
+%3|1792253000.439|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2033ms in state CONNECT)
+%3|1792253002.321|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2008ms in state CONNECT)
+%3|1792253002.559|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2018ms in state CONNECT)
+2026-10-17 21:33:36,309 explain INFO consuming ['b3-main-172142.events.detected'] -> b3-main-172142.events.explained
+2026-10-17 21:33:36,426 explain INFO explained cctv_compilation_acc_ved/E1 in 0.0s
+2026-10-17 21:33:36,475 explain INFO EOS cctv_compilation_acc_ved
+2026-10-17 21:33:36,478 explain INFO explained cctv_intersection_cr/E1 in 0.0s
+2026-10-17 21:33:36,534 explain INFO EOS cctv_intersection_cr
+2026-10-17 21:33:36,539 explain INFO explained dashcam_collision_with_motorcycle_1/E1 in 0.0s
+2026-10-17 21:33:36,585 explain INFO EOS dashcam_collision_with_motorcycle_1
+2026-10-17 21:33:36,591 explain INFO explained dashcam_faizy_sample_traffic/E1 in 0.0s
+2026-10-17 21:33:36,639 explain INFO EOS dashcam_faizy_sample_traffic
+`torch_dtype` is deprecated! Use `dtype` instead!
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0x0d43170c36da05e3b9ae8c45931fcf76",
+        "span_id": "0xdc29b6347d79725f",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T16:03:36.424249Z",
+    "end_time": "2026-10-17T16:03:36.426194Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "cctv_compilation_acc_ved/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0x89de463e96a907f3a76aa22a4d295766",
+        "span_id": "0xa80fbbc139ca7b1e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T16:03:36.476042Z",
+    "end_time": "2026-10-17T16:03:36.478840Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "cctv_intersection_cr/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0x490e8328b60e9d0dab60e0cae3d6b9a4",
+        "span_id": "0x84d2127c2e957b56",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T16:03:36.535230Z",
+    "end_time": "2026-10-17T16:03:36.539085Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "dashcam_collision_with_motorcycle_1/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0x74beaa678f674c651a08dcc7c28ba205",
+        "span_id": "0x74df3e4098cda494",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T16:03:36.586766Z",
+    "end_time": "2026-10-17T16:03:36.591175Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "dashcam_faizy_sample_traffic/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 21:36:19,789 explain INFO explained dashcam_faizy_sample_traffic_2/E1 in 163.1s
+2026-10-17 21:36:19,848 explain INFO EOS dashcam_faizy_sample_traffic_2
+2026-10-17 21:36:19,850 explain INFO EOS dashcam_head_on_collision_10
+2026-10-17 21:36:19,852 explain INFO EOS dashcam_head_on_collision_109
+2026-10-17 21:36:19,854 explain INFO EOS dashcam_head_on_collision_114
+2026-10-17 21:36:19,856 explain INFO EOS dashcam_rollover_1
+2026-10-17 21:36:19,857 explain INFO EOS dashcam_rollover_106
+{
+    "name": "explain",
+    "context": {
+        "trace_id": "0x6d1216327c7b9ecdc7b8d0d66817c2e9",
+        "span_id": "0xf6a7aabb7cc72c01",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T16:03:36.640929Z",
+    "end_time": "2026-10-17T16:06:19.786000Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "event.id": "dashcam_faizy_sample_traffic_2/E1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-explain"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 21:39:59,935 explain INFO explained dashcam_rollover_121/E1 in 220.1s
+2026-10-17 21:39:59,982 explain INFO EOS dashcam_rollover_121
+2026-10-17 21:40:00,244 explain INFO explained news_fire_or_explosions_20/E1 in 0.0s
+2026-10-17 21:40:00,289 explain INFO EOS news_fire_or_explosions_20
+2026-10-17 21:40:00,292 explain INFO EOS dashcam_negative_samples_10
+2026-10-17 21:40:00,299 explain INFO explained intel_car-detection/E1 in 0.0s
+2026-10-17 21:40:00,346 explain INFO EOS intel_car-detection

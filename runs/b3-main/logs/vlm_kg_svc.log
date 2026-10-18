@@ -1,0 +1,5927 @@
+%3|1792237914.965|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2034ms in state CONNECT)
+%3|1792237917.104|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2028ms in state CONNECT)
+2026-10-17 17:21:57,136 vlm INFO metrics for vlm on :8004/metrics
+2026-10-17 17:21:57,348 vlm INFO consuming ['b3-main-172142.windows.keyframes'] -> b3-main-172142.windows.closed
+%3|1792237919.152|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2028ms in state CONNECT)
+%3|1792237919.152|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2026ms in state CONNECT)
+%3|1792237921.280|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2016ms in state CONNECT)
+%3|1792237923.194|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2025ms in state CONNECT)
+%3|1792237923.431|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2039ms in state CONNECT)
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x6271d9f3b50ee279255bc01e32d0733e",
+        "span_id": "0x2c1b92cfed52b95e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x100765388676ec68",
+    "start_time": "2026-10-17T11:52:22.097501Z",
+    "end_time": "2026-10-17T11:52:22.116390Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x6271d9f3b50ee279255bc01e32d0733e",
+        "span_id": "0x6266330682d63ef5",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x100765388676ec68",
+    "start_time": "2026-10-17T11:52:22.116510Z",
+    "end_time": "2026-10-17T11:52:22.117488Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x6271d9f3b50ee279255bc01e32d0733e",
+        "span_id": "0x100765388676ec68",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:22.097383Z",
+    "end_time": "2026-10-17T11:52:22.117527Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xcdffba2370f97412f6cc5daff43b0ed8",
+        "span_id": "0xddc5b4918570f7dc",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x8bcc49af8ee07a58",
+    "start_time": "2026-10-17T11:52:24.616062Z",
+    "end_time": "2026-10-17T11:52:24.639148Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xcdffba2370f97412f6cc5daff43b0ed8",
+        "span_id": "0x90003b6ef91d5bcf",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x8bcc49af8ee07a58",
+    "start_time": "2026-10-17T11:52:24.639321Z",
+    "end_time": "2026-10-17T11:52:24.640033Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xcdffba2370f97412f6cc5daff43b0ed8",
+        "span_id": "0x8bcc49af8ee07a58",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:24.615870Z",
+    "end_time": "2026-10-17T11:52:24.640068Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W2"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x4030ce572507a783f66cc6c5bb911f71",
+        "span_id": "0x249cd276d1b50201",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xa9dbeac96b287539",
+    "start_time": "2026-10-17T11:52:27.322749Z",
+    "end_time": "2026-10-17T11:52:27.346902Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x4030ce572507a783f66cc6c5bb911f71",
+        "span_id": "0xd1bb47e9243c08a9",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xa9dbeac96b287539",
+    "start_time": "2026-10-17T11:52:27.347015Z",
+    "end_time": "2026-10-17T11:52:27.347293Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x4030ce572507a783f66cc6c5bb911f71",
+        "span_id": "0xa9dbeac96b287539",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:27.322703Z",
+    "end_time": "2026-10-17T11:52:27.347310Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W3"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xaf1b2cb2fb48d35e9ce42b473931799f",
+        "span_id": "0x6a717fe5d5629172",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x8f477fd77715b70c",
+    "start_time": "2026-10-17T11:52:28.592893Z",
+    "end_time": "2026-10-17T11:52:28.619189Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xaf1b2cb2fb48d35e9ce42b473931799f",
+        "span_id": "0x8ed6d2e6ec4ef749",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x8f477fd77715b70c",
+    "start_time": "2026-10-17T11:52:28.619323Z",
+    "end_time": "2026-10-17T11:52:28.619558Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xaf1b2cb2fb48d35e9ce42b473931799f",
+        "span_id": "0x8f477fd77715b70c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:28.592714Z",
+    "end_time": "2026-10-17T11:52:28.619584Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W4"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x97b9ed33c5951d8de36d0f2aa97a507b",
+        "span_id": "0x17cdc9df45fb7adc",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x3108b73c982b48a2",
+    "start_time": "2026-10-17T11:52:29.857228Z",
+    "end_time": "2026-10-17T11:52:29.868941Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x97b9ed33c5951d8de36d0f2aa97a507b",
+        "span_id": "0x6d3966599d05b6b1",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x3108b73c982b48a2",
+    "start_time": "2026-10-17T11:52:29.869072Z",
+    "end_time": "2026-10-17T11:52:29.869320Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x97b9ed33c5951d8de36d0f2aa97a507b",
+        "span_id": "0x3108b73c982b48a2",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:29.857124Z",
+    "end_time": "2026-10-17T11:52:29.869346Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W5"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x84ae45a3dbc32c4b3acccfe1c3a1e9c4",
+        "span_id": "0x6668e52baec36c89",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x8ec215dee54da4b3",
+    "start_time": "2026-10-17T11:52:32.971010Z",
+    "end_time": "2026-10-17T11:52:32.984275Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x84ae45a3dbc32c4b3acccfe1c3a1e9c4",
+        "span_id": "0x6b85908559108a0b",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x8ec215dee54da4b3",
+    "start_time": "2026-10-17T11:52:32.984346Z",
+    "end_time": "2026-10-17T11:52:32.984469Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x84ae45a3dbc32c4b3acccfe1c3a1e9c4",
+        "span_id": "0x8ec215dee54da4b3",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:32.970970Z",
+    "end_time": "2026-10-17T11:52:32.984476Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W6"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xfec1afb95e593aef11628824e8c36ebd",
+        "span_id": "0x8612cec8ba7e7612",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xe502a415e51c08e6",
+    "start_time": "2026-10-17T11:52:35.664956Z",
+    "end_time": "2026-10-17T11:52:35.675872Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xfec1afb95e593aef11628824e8c36ebd",
+        "span_id": "0xd03e34d489e9717e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xe502a415e51c08e6",
+    "start_time": "2026-10-17T11:52:35.675999Z",
+    "end_time": "2026-10-17T11:52:35.676491Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xfec1afb95e593aef11628824e8c36ebd",
+        "span_id": "0xe502a415e51c08e6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:35.664892Z",
+    "end_time": "2026-10-17T11:52:35.676523Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W7"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x1a49df2b6746b52cbbd52be5d7d77163",
+        "span_id": "0xdbf41f993e6e30a0",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x0ea35e1cd7448813",
+    "start_time": "2026-10-17T11:52:37.942023Z",
+    "end_time": "2026-10-17T11:52:37.969373Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x1a49df2b6746b52cbbd52be5d7d77163",
+        "span_id": "0x660e8c2d4d75ccea",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x0ea35e1cd7448813",
+    "start_time": "2026-10-17T11:52:37.969467Z",
+    "end_time": "2026-10-17T11:52:37.969786Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x1a49df2b6746b52cbbd52be5d7d77163",
+        "span_id": "0x0ea35e1cd7448813",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:37.941973Z",
+    "end_time": "2026-10-17T11:52:37.969808Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W8"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xf4b9a0dfb4312bdf38f2c2f1f78b8ccc",
+        "span_id": "0x16f45ee7cc06bea5",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xf0da9f3e8e382043",
+    "start_time": "2026-10-17T11:52:40.869338Z",
+    "end_time": "2026-10-17T11:52:40.880195Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xf4b9a0dfb4312bdf38f2c2f1f78b8ccc",
+        "span_id": "0x83b504ce5e0b24b0",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xf0da9f3e8e382043",
+    "start_time": "2026-10-17T11:52:40.880317Z",
+    "end_time": "2026-10-17T11:52:40.880844Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xf4b9a0dfb4312bdf38f2c2f1f78b8ccc",
+        "span_id": "0xf0da9f3e8e382043",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:40.869288Z",
+    "end_time": "2026-10-17T11:52:40.880877Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W9"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xe6534fcd1ea54efb0f1c01cff97f1b65",
+        "span_id": "0x73a68a167ef6951c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xa10c1444dba3ff52",
+    "start_time": "2026-10-17T11:52:43.769259Z",
+    "end_time": "2026-10-17T11:52:43.777740Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xe6534fcd1ea54efb0f1c01cff97f1b65",
+        "span_id": "0x5cbce4f500eca178",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xa10c1444dba3ff52",
+    "start_time": "2026-10-17T11:52:43.777847Z",
+    "end_time": "2026-10-17T11:52:43.778234Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xe6534fcd1ea54efb0f1c01cff97f1b65",
+        "span_id": "0xa10c1444dba3ff52",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:43.769188Z",
+    "end_time": "2026-10-17T11:52:43.778257Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W10"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x09b2613ad5c9e1cbd19fa2d6bc66895b",
+        "span_id": "0x549a43f61a211260",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xd7ad47357bd646ba",
+    "start_time": "2026-10-17T11:52:46.284182Z",
+    "end_time": "2026-10-17T11:52:46.291845Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x09b2613ad5c9e1cbd19fa2d6bc66895b",
+        "span_id": "0x644814374acd6795",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xd7ad47357bd646ba",
+    "start_time": "2026-10-17T11:52:46.291958Z",
+    "end_time": "2026-10-17T11:52:46.292181Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x09b2613ad5c9e1cbd19fa2d6bc66895b",
+        "span_id": "0xd7ad47357bd646ba",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:46.284137Z",
+    "end_time": "2026-10-17T11:52:46.292203Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W11"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x025cc289cb73e10c9695b47c53f89845",
+        "span_id": "0x3dcb981b222ab090",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x29aec7415716b4ce",
+    "start_time": "2026-10-17T11:52:48.977131Z",
+    "end_time": "2026-10-17T11:52:48.985842Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x025cc289cb73e10c9695b47c53f89845",
+        "span_id": "0xb70c8759cfdc2514",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x29aec7415716b4ce",
+    "start_time": "2026-10-17T11:52:48.985920Z",
+    "end_time": "2026-10-17T11:52:48.986114Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x025cc289cb73e10c9695b47c53f89845",
+        "span_id": "0x29aec7415716b4ce",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:48.977084Z",
+    "end_time": "2026-10-17T11:52:48.986132Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W12"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xe85363297087de385ce9bc76e1644f58",
+        "span_id": "0x7d565dc2f406abba",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x53a219f668087fcc",
+    "start_time": "2026-10-17T11:52:54.972695Z",
+    "end_time": "2026-10-17T11:52:54.990321Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xe85363297087de385ce9bc76e1644f58",
+        "span_id": "0x8281e51b6cea87fb",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x53a219f668087fcc",
+    "start_time": "2026-10-17T11:52:54.991216Z",
+    "end_time": "2026-10-17T11:52:54.991943Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xe85363297087de385ce9bc76e1644f58",
+        "span_id": "0x53a219f668087fcc",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:54.972624Z",
+    "end_time": "2026-10-17T11:52:54.991985Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W13"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x6b96862079e548b8a3fad895ca555ca5",
+        "span_id": "0xcf48e6bf73830e24",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x65f9a8d846a880ae",
+    "start_time": "2026-10-17T11:52:58.107510Z",
+    "end_time": "2026-10-17T11:52:58.124251Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x6b96862079e548b8a3fad895ca555ca5",
+        "span_id": "0xe77a8b619daef1cf",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x65f9a8d846a880ae",
+    "start_time": "2026-10-17T11:52:58.124377Z",
+    "end_time": "2026-10-17T11:52:58.124907Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x6b96862079e548b8a3fad895ca555ca5",
+        "span_id": "0x65f9a8d846a880ae",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:52:58.107439Z",
+    "end_time": "2026-10-17T11:52:58.124930Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W14"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xa035aa228fedce3529304a2e440d92ef",
+        "span_id": "0xe83f19d1ad3ed144",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x5cebb5f7fbb69051",
+    "start_time": "2026-10-17T11:53:00.998278Z",
+    "end_time": "2026-10-17T11:53:01.005180Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xa035aa228fedce3529304a2e440d92ef",
+        "span_id": "0xfdb1b803befba7e0",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x5cebb5f7fbb69051",
+    "start_time": "2026-10-17T11:53:01.005315Z",
+    "end_time": "2026-10-17T11:53:01.005780Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xa035aa228fedce3529304a2e440d92ef",
+        "span_id": "0x5cebb5f7fbb69051",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:53:00.998236Z",
+    "end_time": "2026-10-17T11:53:01.005800Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W15"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xeea7d1c366d69eb427a3b2c346bedb9e",
+        "span_id": "0xe01c970909f2208b",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xeab259802f8beacc",
+    "start_time": "2026-10-17T11:53:02.868692Z",
+    "end_time": "2026-10-17T11:53:02.879345Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xeea7d1c366d69eb427a3b2c346bedb9e",
+        "span_id": "0x04250bf869fb6ec4",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xeab259802f8beacc",
+    "start_time": "2026-10-17T11:53:02.879495Z",
+    "end_time": "2026-10-17T11:53:02.880081Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xeea7d1c366d69eb427a3b2c346bedb9e",
+        "span_id": "0xeab259802f8beacc",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:53:02.868559Z",
+    "end_time": "2026-10-17T11:53:02.880113Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W16"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x73988f1ec4f4f98edfd1930002d84a40",
+        "span_id": "0x7bf4164f86a1df47",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x585d4853b122a324",
+    "start_time": "2026-10-17T11:53:05.347589Z",
+    "end_time": "2026-10-17T11:53:05.415510Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x73988f1ec4f4f98edfd1930002d84a40",
+        "span_id": "0x82598a381df76d59",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x585d4853b122a324",
+    "start_time": "2026-10-17T11:53:05.415661Z",
+    "end_time": "2026-10-17T11:53:05.423860Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x73988f1ec4f4f98edfd1930002d84a40",
+        "span_id": "0x585d4853b122a324",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:53:05.347523Z",
+    "end_time": "2026-10-17T11:53:05.423897Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W17"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:23:08,631 vlm INFO EOS cctv_compilation_acc_ved
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x9607a4ac896fecd61a23e44bb2d9f705",
+        "span_id": "0x497f3d22f6d69927",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x9b1c69428846ce65",
+    "start_time": "2026-10-17T11:53:08.340794Z",
+    "end_time": "2026-10-17T11:53:08.353024Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x9607a4ac896fecd61a23e44bb2d9f705",
+        "span_id": "0xf4e43318b1a547c9",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x9b1c69428846ce65",
+    "start_time": "2026-10-17T11:53:08.353140Z",
+    "end_time": "2026-10-17T11:53:08.353672Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x9607a4ac896fecd61a23e44bb2d9f705",
+        "span_id": "0x9b1c69428846ce65",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:53:08.340727Z",
+    "end_time": "2026-10-17T11:53:08.353703Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_compilation_acc_ved/W18"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x9e93ebfe47a83090f6a8937df3e716c8",
+        "span_id": "0x06fb35d75a72484c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x3d2f6b1c159b8141",
+    "start_time": "2026-10-17T11:53:10.693944Z",
+    "end_time": "2026-10-17T11:53:10.706045Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x9e93ebfe47a83090f6a8937df3e716c8",
+        "span_id": "0x0b5695f63d55d4ec",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x3d2f6b1c159b8141",
+    "start_time": "2026-10-17T11:53:10.706178Z",
+    "end_time": "2026-10-17T11:53:10.706396Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x9e93ebfe47a83090f6a8937df3e716c8",
+        "span_id": "0x3d2f6b1c159b8141",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:53:10.693864Z",
+    "end_time": "2026-10-17T11:53:10.706416Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_intersection_cr/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x84498a9623197a95d55b31f25cde8923",
+        "span_id": "0x498dcee3287f7cf7",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x1c9eb0a2619e1899",
+    "start_time": "2026-10-17T11:53:14.688792Z",
+    "end_time": "2026-10-17T11:53:14.734446Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x84498a9623197a95d55b31f25cde8923",
+        "span_id": "0xbf0df9f8798630fa",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x1c9eb0a2619e1899",
+    "start_time": "2026-10-17T11:53:14.734573Z",
+    "end_time": "2026-10-17T11:53:14.735120Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x84498a9623197a95d55b31f25cde8923",
+        "span_id": "0x1c9eb0a2619e1899",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:53:14.688686Z",
+    "end_time": "2026-10-17T11:53:14.735166Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_intersection_cr/W2"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x61a9c5d516738c9795feaf0255a8a95b",
+        "span_id": "0x97d204938a7ae04b",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xb49b5013ae61b4f4",
+    "start_time": "2026-10-17T11:53:19.416608Z",
+    "end_time": "2026-10-17T11:53:19.449175Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x61a9c5d516738c9795feaf0255a8a95b",
+        "span_id": "0xc06cd083781ac961",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xb49b5013ae61b4f4",
+    "start_time": "2026-10-17T11:53:19.449312Z",
+    "end_time": "2026-10-17T11:53:19.449753Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x61a9c5d516738c9795feaf0255a8a95b",
+        "span_id": "0xb49b5013ae61b4f4",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:53:19.416501Z",
+    "end_time": "2026-10-17T11:53:19.449777Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_intersection_cr/W3"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:23:23,192 vlm INFO EOS cctv_intersection_cr
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xc3d5f4e1aa88b6c04000fd02b4b4d9f2",
+        "span_id": "0x5e6befa468f4f220",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x9d714b8d9a471403",
+    "start_time": "2026-10-17T11:53:23.075582Z",
+    "end_time": "2026-10-17T11:53:23.111985Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xc3d5f4e1aa88b6c04000fd02b4b4d9f2",
+        "span_id": "0xd4af745c6a278c0f",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x9d714b8d9a471403",
+    "start_time": "2026-10-17T11:53:23.112107Z",
+    "end_time": "2026-10-17T11:53:23.112400Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xc3d5f4e1aa88b6c04000fd02b4b4d9f2",
+        "span_id": "0x9d714b8d9a471403",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:53:23.075497Z",
+    "end_time": "2026-10-17T11:53:23.112425Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "cctv_intersection_cr/W4"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xe01c49d4c9aaf609ae3f7cf7c57ef362",
+        "span_id": "0x3d59cebb1c731cdf",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x2ed62b78fb93dd28",
+    "start_time": "2026-10-17T11:53:26.799510Z",
+    "end_time": "2026-10-17T11:53:26.810661Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xe01c49d4c9aaf609ae3f7cf7c57ef362",
+        "span_id": "0x1de986be85ac0472",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x2ed62b78fb93dd28",
+    "start_time": "2026-10-17T11:53:26.810789Z",
+    "end_time": "2026-10-17T11:53:26.810971Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xe01c49d4c9aaf609ae3f7cf7c57ef362",
+        "span_id": "0x2ed62b78fb93dd28",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:53:26.799423Z",
+    "end_time": "2026-10-17T11:53:26.810991Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_collision_with_motorcycle_1/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:23:29,825 vlm INFO EOS dashcam_collision_with_motorcycle_1
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xeba340013ca916b3e85efd77a2b06f8e",
+        "span_id": "0x2e48789c43eec941",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x7b66aab7b72714e5",
+    "start_time": "2026-10-17T11:53:29.727520Z",
+    "end_time": "2026-10-17T11:53:29.761282Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xeba340013ca916b3e85efd77a2b06f8e",
+        "span_id": "0xb060272e684e23ab",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x7b66aab7b72714e5",
+    "start_time": "2026-10-17T11:53:29.761385Z",
+    "end_time": "2026-10-17T11:53:29.761709Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xeba340013ca916b3e85efd77a2b06f8e",
+        "span_id": "0x7b66aab7b72714e5",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:53:29.727415Z",
+    "end_time": "2026-10-17T11:53:29.761725Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_collision_with_motorcycle_1/W2"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\.venv\Lib\site-packages\transformers\models\auto\modeling_auto.py:2242: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xc37aa6c15cc1f00b5651753f4f907d38",
+        "span_id": "0xb1c9e7e5c8fe9d85",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xc24435a954f6a8dc",
+    "start_time": "2026-10-17T11:53:33.739208Z",
+    "end_time": "2026-10-17T11:55:43.002037Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xc37aa6c15cc1f00b5651753f4f907d38",
+        "span_id": "0x42f93a4dbc2f63c2",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xc24435a954f6a8dc",
+    "start_time": "2026-10-17T11:55:43.003439Z",
+    "end_time": "2026-10-17T11:55:43.004652Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xc37aa6c15cc1f00b5651753f4f907d38",
+        "span_id": "0xc24435a954f6a8dc",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:53:33.739142Z",
+    "end_time": "2026-10-17T11:55:43.004750Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_faizy_sample_traffic/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xc13058d2d92f514055d17d78e691c917",
+        "span_id": "0x3c64f655c5165593",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x11b51389b09d451a",
+    "start_time": "2026-10-17T11:55:43.256821Z",
+    "end_time": "2026-10-17T11:57:48.348373Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xc13058d2d92f514055d17d78e691c917",
+        "span_id": "0x758887c026071822",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x11b51389b09d451a",
+    "start_time": "2026-10-17T11:57:48.348664Z",
+    "end_time": "2026-10-17T11:57:48.349371Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xc13058d2d92f514055d17d78e691c917",
+        "span_id": "0x11b51389b09d451a",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:55:43.256611Z",
+    "end_time": "2026-10-17T11:57:48.349413Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_faizy_sample_traffic/W2"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:29:13,140 vlm INFO EOS dashcam_faizy_sample_traffic
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x4df48cfeb24029832e005d05223237d5",
+        "span_id": "0xd27a15fa29a37941",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xefa23622aad20e8f",
+    "start_time": "2026-10-17T11:57:48.355306Z",
+    "end_time": "2026-10-17T11:59:13.021349Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x4df48cfeb24029832e005d05223237d5",
+        "span_id": "0x314af748b34f2486",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xefa23622aad20e8f",
+    "start_time": "2026-10-17T11:59:13.035738Z",
+    "end_time": "2026-10-17T11:59:13.054267Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x4df48cfeb24029832e005d05223237d5",
+        "span_id": "0xefa23622aad20e8f",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:57:48.355158Z",
+    "end_time": "2026-10-17T11:59:13.054366Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_faizy_sample_traffic/W3"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xee1b7bd2dbc86723d48e975627938f88",
+        "span_id": "0x9039e5788f77433e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x044a2c0e56c6acb3",
+    "start_time": "2026-10-17T11:59:13.246517Z",
+    "end_time": "2026-10-17T11:59:46.355270Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xee1b7bd2dbc86723d48e975627938f88",
+        "span_id": "0x75d46f737fc6b0b9",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x044a2c0e56c6acb3",
+    "start_time": "2026-10-17T11:59:46.355378Z",
+    "end_time": "2026-10-17T11:59:46.356652Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xee1b7bd2dbc86723d48e975627938f88",
+        "span_id": "0x044a2c0e56c6acb3",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:59:13.246121Z",
+    "end_time": "2026-10-17T11:59:46.356772Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_faizy_sample_traffic_2/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+%4|1792238443.482|MAXPOLL|rdkafka#consumer-2| [thrd:main]: Application maximum poll interval (300000ms) exceeded by 271ms (adjust max.poll.interval.ms for long-running message processing): leaving group
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xfcb9601e0f8d291c69dc3fbd47dfcc7c",
+        "span_id": "0xe04d6e08d42eb9c6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x895ffada2bebf0c3",
+    "start_time": "2026-10-17T11:59:46.374838Z",
+    "end_time": "2026-10-17T12:01:52.973348Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xfcb9601e0f8d291c69dc3fbd47dfcc7c",
+        "span_id": "0xc8e70efca4450424",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x895ffada2bebf0c3",
+    "start_time": "2026-10-17T12:01:52.973900Z",
+    "end_time": "2026-10-17T12:01:52.976735Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xfcb9601e0f8d291c69dc3fbd47dfcc7c",
+        "span_id": "0x895ffada2bebf0c3",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T11:59:46.374506Z",
+    "end_time": "2026-10-17T12:01:52.976803Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_faizy_sample_traffic_2/W2"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xbff91b73a6c871a8a0b5bd72e58db491",
+        "span_id": "0x6aae876a949bfc99",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x4ad9d2c27215659a",
+    "start_time": "2026-10-17T12:01:53.001701Z",
+    "end_time": "2026-10-17T12:03:26.005663Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xbff91b73a6c871a8a0b5bd72e58db491",
+        "span_id": "0x9df3865db5e4f1cb",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x4ad9d2c27215659a",
+    "start_time": "2026-10-17T12:03:26.006723Z",
+    "end_time": "2026-10-17T12:03:26.009896Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xbff91b73a6c871a8a0b5bd72e58db491",
+        "span_id": "0x4ad9d2c27215659a",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:01:53.001528Z",
+    "end_time": "2026-10-17T12:03:26.009948Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_faizy_sample_traffic_2/W3"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x0e0e417ece236fdc9746e18bbf8c9a21",
+        "span_id": "0xbaad4259571febd8",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x7dcb188d653b22d6",
+    "start_time": "2026-10-17T12:03:26.023629Z",
+    "end_time": "2026-10-17T12:05:20.688526Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x0e0e417ece236fdc9746e18bbf8c9a21",
+        "span_id": "0x850e2e3379941aee",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x7dcb188d653b22d6",
+    "start_time": "2026-10-17T12:05:20.689035Z",
+    "end_time": "2026-10-17T12:05:20.690494Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x0e0e417ece236fdc9746e18bbf8c9a21",
+        "span_id": "0x7dcb188d653b22d6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:03:26.023493Z",
+    "end_time": "2026-10-17T12:05:20.690551Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_faizy_sample_traffic_2/W4"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:35:52,713 vlm INFO EOS dashcam_faizy_sample_traffic_2
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x36ed4b230a3c408abbb0aecf15c2cae0",
+        "span_id": "0x3139a39c068dafa0",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x45ad0216150c56e6",
+    "start_time": "2026-10-17T12:05:20.702599Z",
+    "end_time": "2026-10-17T12:05:52.675591Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x36ed4b230a3c408abbb0aecf15c2cae0",
+        "span_id": "0xfe2e48cfb1fae5af",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x45ad0216150c56e6",
+    "start_time": "2026-10-17T12:05:52.675935Z",
+    "end_time": "2026-10-17T12:05:52.677202Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x36ed4b230a3c408abbb0aecf15c2cae0",
+        "span_id": "0x45ad0216150c56e6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:05:20.702511Z",
+    "end_time": "2026-10-17T12:05:52.677252Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_faizy_sample_traffic_2/W5"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:36:31,007 vlm INFO EOS dashcam_head_on_collision_10
+2026-10-17 17:36:31,135 vlm INFO EOS dashcam_head_on_collision_109
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x4544d642af2a6849dfedc05332922534",
+        "span_id": "0xb01876a7d8c79029",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x15b3868a5c7ffac4",
+    "start_time": "2026-10-17T12:05:52.730578Z",
+    "end_time": "2026-10-17T12:06:30.928499Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x4544d642af2a6849dfedc05332922534",
+        "span_id": "0x4c719102967b852d",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x15b3868a5c7ffac4",
+    "start_time": "2026-10-17T12:06:30.928902Z",
+    "end_time": "2026-10-17T12:06:30.930550Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x4544d642af2a6849dfedc05332922534",
+        "span_id": "0x15b3868a5c7ffac4",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:05:52.729419Z",
+    "end_time": "2026-10-17T12:06:30.930621Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_head_on_collision_10/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x509e53860b02a1d6944b3201d35c50cf",
+        "span_id": "0xbb423648fe8bef87",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xdd74c672377dc296",
+    "start_time": "2026-10-17T12:06:31.012256Z",
+    "end_time": "2026-10-17T12:06:31.056713Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x509e53860b02a1d6944b3201d35c50cf",
+        "span_id": "0x72f1c7f3ed329baf",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xdd74c672377dc296",
+    "start_time": "2026-10-17T12:06:31.057038Z",
+    "end_time": "2026-10-17T12:06:31.057385Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x509e53860b02a1d6944b3201d35c50cf",
+        "span_id": "0xdd74c672377dc296",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:06:31.012080Z",
+    "end_time": "2026-10-17T12:06:31.057422Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_head_on_collision_109/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:37:28,652 vlm INFO EOS dashcam_head_on_collision_114
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xba510b0fc46accb27f7517829f62c46a",
+        "span_id": "0x5aeb19afababe0f8",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x711670300c40d460",
+    "start_time": "2026-10-17T12:06:31.156919Z",
+    "end_time": "2026-10-17T12:07:28.593474Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xba510b0fc46accb27f7517829f62c46a",
+        "span_id": "0x6f0437eb8b8600b3",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x711670300c40d460",
+    "start_time": "2026-10-17T12:07:28.593702Z",
+    "end_time": "2026-10-17T12:07:28.593957Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xba510b0fc46accb27f7517829f62c46a",
+        "span_id": "0x711670300c40d460",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:06:31.156734Z",
+    "end_time": "2026-10-17T12:07:28.593976Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_head_on_collision_114/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:38:21,683 vlm INFO EOS dashcam_rollover_1
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x80a29f345b043b737816908d17d53e9c",
+        "span_id": "0x3e9414974a2ed8c2",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xc731c97743f7824d",
+    "start_time": "2026-10-17T12:07:28.657720Z",
+    "end_time": "2026-10-17T12:08:21.608893Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x80a29f345b043b737816908d17d53e9c",
+        "span_id": "0x3e008b6eb467dfe6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xc731c97743f7824d",
+    "start_time": "2026-10-17T12:08:21.609806Z",
+    "end_time": "2026-10-17T12:08:21.610686Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x80a29f345b043b737816908d17d53e9c",
+        "span_id": "0xc731c97743f7824d",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:07:28.657610Z",
+    "end_time": "2026-10-17T12:08:21.610764Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_rollover_1/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:39:07,117 vlm INFO EOS dashcam_rollover_106
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xbd608ba429bff2a268d985fbe79ac2d8",
+        "span_id": "0x18f743fb59996f17",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xda6027bea2eceab3",
+    "start_time": "2026-10-17T12:08:21.707716Z",
+    "end_time": "2026-10-17T12:09:07.050391Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xbd608ba429bff2a268d985fbe79ac2d8",
+        "span_id": "0xa7776a2bfdbce046",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xda6027bea2eceab3",
+    "start_time": "2026-10-17T12:09:07.053446Z",
+    "end_time": "2026-10-17T12:09:07.056427Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xbd608ba429bff2a268d985fbe79ac2d8",
+        "span_id": "0xda6027bea2eceab3",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:08:21.707402Z",
+    "end_time": "2026-10-17T12:09:07.056493Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_rollover_106/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x9d8caa795e96348a7a299b3321e5a2ff",
+        "span_id": "0x94fe2614f7bd874b",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xc26afb769c9646fb",
+    "start_time": "2026-10-17T12:09:07.124277Z",
+    "end_time": "2026-10-17T12:09:18.462807Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x9d8caa795e96348a7a299b3321e5a2ff",
+        "span_id": "0xb50b2dbb210eec7c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xc26afb769c9646fb",
+    "start_time": "2026-10-17T12:09:18.463024Z",
+    "end_time": "2026-10-17T12:09:18.463250Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x9d8caa795e96348a7a299b3321e5a2ff",
+        "span_id": "0xc26afb769c9646fb",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:09:07.123966Z",
+    "end_time": "2026-10-17T12:09:18.463273Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_rollover_121/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:41:19,601 vlm INFO EOS dashcam_rollover_121
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x6d35ca66c879ca6981564c1fe311db2f",
+        "span_id": "0xcbb5b9c07274e804",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xf2a86c158e9773c5",
+    "start_time": "2026-10-17T12:09:18.480782Z",
+    "end_time": "2026-10-17T12:11:19.548965Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x6d35ca66c879ca6981564c1fe311db2f",
+        "span_id": "0x10871ca70c3bd563",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xf2a86c158e9773c5",
+    "start_time": "2026-10-17T12:11:19.549154Z",
+    "end_time": "2026-10-17T12:11:19.549611Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x6d35ca66c879ca6981564c1fe311db2f",
+        "span_id": "0xf2a86c158e9773c5",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:09:18.480676Z",
+    "end_time": "2026-10-17T12:11:19.549629Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_rollover_121/W2"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xfb48e5bb4437b65fb008bebe9420081d",
+        "span_id": "0x26305649a0e52689",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x96f1360a7062b023",
+    "start_time": "2026-10-17T12:11:19.603143Z",
+    "end_time": "2026-10-17T12:11:44.912865Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xfb48e5bb4437b65fb008bebe9420081d",
+        "span_id": "0x6aa8ef891fb25953",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x96f1360a7062b023",
+    "start_time": "2026-10-17T12:11:44.913177Z",
+    "end_time": "2026-10-17T12:11:44.913541Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xfb48e5bb4437b65fb008bebe9420081d",
+        "span_id": "0x96f1360a7062b023",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:11:19.603099Z",
+    "end_time": "2026-10-17T12:11:44.913581Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "news_fire_or_explosions_20/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:43:39,702 vlm INFO EOS news_fire_or_explosions_20
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x96c26220c6846e9eea6a664591b8c633",
+        "span_id": "0xe3833be8e09ece5d",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xc33cd7e54cb435a2",
+    "start_time": "2026-10-17T12:11:44.932024Z",
+    "end_time": "2026-10-17T12:13:39.642233Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x96c26220c6846e9eea6a664591b8c633",
+        "span_id": "0x301660611242ddaa",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xc33cd7e54cb435a2",
+    "start_time": "2026-10-17T12:13:39.642477Z",
+    "end_time": "2026-10-17T12:13:39.643078Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x96c26220c6846e9eea6a664591b8c633",
+        "span_id": "0xc33cd7e54cb435a2",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:11:44.931453Z",
+    "end_time": "2026-10-17T12:13:39.643177Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "news_fire_or_explosions_20/W2"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:44:34,681 vlm INFO EOS dashcam_negative_samples_10
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x368ca5fd07c36859ce220f9c04f48890",
+        "span_id": "0x1fa3103221f49a85",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x0e7097f2837d3629",
+    "start_time": "2026-10-17T12:13:39.707028Z",
+    "end_time": "2026-10-17T12:14:34.628121Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x368ca5fd07c36859ce220f9c04f48890",
+        "span_id": "0x3ce516b3c410b64b",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x0e7097f2837d3629",
+    "start_time": "2026-10-17T12:14:34.629483Z",
+    "end_time": "2026-10-17T12:14:34.630911Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x368ca5fd07c36859ce220f9c04f48890",
+        "span_id": "0x0e7097f2837d3629",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:13:39.706989Z",
+    "end_time": "2026-10-17T12:14:34.630944Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "dashcam_negative_samples_10/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x5416885ca18439f7d326747108ffc7be",
+        "span_id": "0x7b35c56f06549abb",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x62e787cc415079e7",
+    "start_time": "2026-10-17T12:14:34.686378Z",
+    "end_time": "2026-10-17T12:15:14.611156Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x5416885ca18439f7d326747108ffc7be",
+        "span_id": "0x2b06dce6a7f6a7b6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x62e787cc415079e7",
+    "start_time": "2026-10-17T12:15:14.612245Z",
+    "end_time": "2026-10-17T12:15:14.613061Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x5416885ca18439f7d326747108ffc7be",
+        "span_id": "0x62e787cc415079e7",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:14:34.686200Z",
+    "end_time": "2026-10-17T12:15:14.613122Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_car-detection/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xea2ea2192a1ffc233e63ef98c1125fe7",
+        "span_id": "0x3cd5be00c1e948ea",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xf5273914917b2aa6",
+    "start_time": "2026-10-17T12:15:14.629589Z",
+    "end_time": "2026-10-17T12:16:50.997530Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xea2ea2192a1ffc233e63ef98c1125fe7",
+        "span_id": "0x93b9e65f26d7e309",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xf5273914917b2aa6",
+    "start_time": "2026-10-17T12:16:50.997886Z",
+    "end_time": "2026-10-17T12:16:50.998696Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xea2ea2192a1ffc233e63ef98c1125fe7",
+        "span_id": "0xf5273914917b2aa6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:15:14.629380Z",
+    "end_time": "2026-10-17T12:16:50.998742Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_car-detection/W2"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x6e4a64c2d4a5d8fece08a7e3ed4f3568",
+        "span_id": "0xdacef653eb46fd55",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xa35e75b1d55e4179",
+    "start_time": "2026-10-17T12:16:51.004751Z",
+    "end_time": "2026-10-17T12:18:47.866941Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x6e4a64c2d4a5d8fece08a7e3ed4f3568",
+        "span_id": "0xe9724c4f891262be",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xa35e75b1d55e4179",
+    "start_time": "2026-10-17T12:18:47.868036Z",
+    "end_time": "2026-10-17T12:18:47.872408Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x6e4a64c2d4a5d8fece08a7e3ed4f3568",
+        "span_id": "0xa35e75b1d55e4179",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:16:51.004676Z",
+    "end_time": "2026-10-17T12:18:47.872504Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_car-detection/W3"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x0bd7678a8e447d146a4fd987df4e35f9",
+        "span_id": "0x45cbc8735430fce7",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x80e337da0a3ed7b9",
+    "start_time": "2026-10-17T12:18:47.888776Z",
+    "end_time": "2026-10-17T12:20:34.212161Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x0bd7678a8e447d146a4fd987df4e35f9",
+        "span_id": "0xcdbd6afc07d109a1",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x80e337da0a3ed7b9",
+    "start_time": "2026-10-17T12:20:34.212366Z",
+    "end_time": "2026-10-17T12:20:34.213297Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x0bd7678a8e447d146a4fd987df4e35f9",
+        "span_id": "0x80e337da0a3ed7b9",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:18:47.888289Z",
+    "end_time": "2026-10-17T12:20:34.213338Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_car-detection/W4"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+%3|1792239646.096|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2046ms in state CONNECT)
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xe35a11dccf8070fe31d5b5bf11c87f67",
+        "span_id": "0xf0ca5f67a4507df8",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xf8d65a5c382b08c2",
+    "start_time": "2026-10-17T12:20:34.219670Z",
+    "end_time": "2026-10-17T12:22:03.533850Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xe35a11dccf8070fe31d5b5bf11c87f67",
+        "span_id": "0x5ac5c1006524adff",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xf8d65a5c382b08c2",
+    "start_time": "2026-10-17T12:22:03.534451Z",
+    "end_time": "2026-10-17T12:22:03.544702Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xe35a11dccf8070fe31d5b5bf11c87f67",
+        "span_id": "0xf8d65a5c382b08c2",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:20:34.219574Z",
+    "end_time": "2026-10-17T12:22:03.544951Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_car-detection/W5"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xed80719ea1a1b180765666d7888e5374",
+        "span_id": "0x5b9b5efb76bbb8fc",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x463c603a9444a059",
+    "start_time": "2026-10-17T12:22:03.559227Z",
+    "end_time": "2026-10-17T12:22:44.931945Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xed80719ea1a1b180765666d7888e5374",
+        "span_id": "0xadd74ed8b034cc1c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x463c603a9444a059",
+    "start_time": "2026-10-17T12:22:44.932958Z",
+    "end_time": "2026-10-17T12:22:44.934253Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xed80719ea1a1b180765666d7888e5374",
+        "span_id": "0x463c603a9444a059",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:22:03.559064Z",
+    "end_time": "2026-10-17T12:22:44.934440Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_car-detection/W6"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x46092c3780e30a3156754262ba011827",
+        "span_id": "0xac5fb73af6f4fbc5",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x15044ed1b3dae5b5",
+    "start_time": "2026-10-17T12:22:44.944401Z",
+    "end_time": "2026-10-17T12:23:49.157077Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x46092c3780e30a3156754262ba011827",
+        "span_id": "0xf7696dfc11f7f09e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x15044ed1b3dae5b5",
+    "start_time": "2026-10-17T12:23:49.157238Z",
+    "end_time": "2026-10-17T12:23:49.157635Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x46092c3780e30a3156754262ba011827",
+        "span_id": "0x15044ed1b3dae5b5",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:22:44.943979Z",
+    "end_time": "2026-10-17T12:23:49.157662Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_car-detection/W7"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 17:53:59,764 vlm INFO EOS intel_car-detection
+2026-10-17 17:54:00,016 vlm WARNING kafka error: KafkaError{code=_MAX_POLL_EXCEEDED,val=-147,str="Application maximum poll interval (300000ms) exceeded by 271ms"}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x3fa2bed6d7302effc04deaac10778f80",
+        "span_id": "0x0ec9d061c5ce872c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x26359949184a4dde",
+    "start_time": "2026-10-17T12:23:49.161159Z",
+    "end_time": "2026-10-17T12:23:59.711833Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x3fa2bed6d7302effc04deaac10778f80",
+        "span_id": "0x3af664bdf881edec",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x26359949184a4dde",
+    "start_time": "2026-10-17T12:23:59.711973Z",
+    "end_time": "2026-10-17T12:23:59.712294Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x3fa2bed6d7302effc04deaac10778f80",
+        "span_id": "0x26359949184a4dde",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:23:49.161058Z",
+    "end_time": "2026-10-17T12:23:59.712322Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_car-detection/W8"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x1273cf8749d4099aa6d859c61cc56754",
+        "span_id": "0x1989b9660ef7fcb2",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x6f3955049bcaadb9",
+    "start_time": "2026-10-17T12:24:00.064491Z",
+    "end_time": "2026-10-17T12:25:48.599464Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x1273cf8749d4099aa6d859c61cc56754",
+        "span_id": "0x432b69a07f29744f",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x6f3955049bcaadb9",
+    "start_time": "2026-10-17T12:25:48.600066Z",
+    "end_time": "2026-10-17T12:25:48.601335Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x1273cf8749d4099aa6d859c61cc56754",
+        "span_id": "0x6f3955049bcaadb9",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:24:00.064386Z",
+    "end_time": "2026-10-17T12:25:48.601404Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xbeb07a23c85d183d10241ba6b76e620c",
+        "span_id": "0xa27b0de20eee69f4",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x5f63be4fd232bdc9",
+    "start_time": "2026-10-17T12:25:48.619735Z",
+    "end_time": "2026-10-17T12:27:35.653958Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xbeb07a23c85d183d10241ba6b76e620c",
+        "span_id": "0x640247d7d3dae320",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x5f63be4fd232bdc9",
+    "start_time": "2026-10-17T12:27:35.654441Z",
+    "end_time": "2026-10-17T12:27:35.656177Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xbeb07a23c85d183d10241ba6b76e620c",
+        "span_id": "0x5f63be4fd232bdc9",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:25:48.619653Z",
+    "end_time": "2026-10-17T12:27:35.656259Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W2"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+%4|1792240140.124|MAXPOLL|rdkafka#consumer-2| [thrd:main]: Application maximum poll interval (300000ms) exceeded by 141ms (adjust max.poll.interval.ms for long-running message processing): leaving group
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x7a622e7924b4342acf65256c333db1a4",
+        "span_id": "0x683b6516302c41bd",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xf7e510af21300fd4",
+    "start_time": "2026-10-17T12:27:35.665731Z",
+    "end_time": "2026-10-17T12:29:09.760215Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x7a622e7924b4342acf65256c333db1a4",
+        "span_id": "0xb3a77680ac180a9b",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xf7e510af21300fd4",
+    "start_time": "2026-10-17T12:29:09.761044Z",
+    "end_time": "2026-10-17T12:29:09.762338Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x7a622e7924b4342acf65256c333db1a4",
+        "span_id": "0xf7e510af21300fd4",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:27:35.665184Z",
+    "end_time": "2026-10-17T12:29:09.762416Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W3"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x63c93a3d6e75279016ebd97f81687d0c",
+        "span_id": "0x8eb506d793dc3bac",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x7d408c8b561c0ad1",
+    "start_time": "2026-10-17T12:29:09.770910Z",
+    "end_time": "2026-10-17T12:30:51.276345Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x63c93a3d6e75279016ebd97f81687d0c",
+        "span_id": "0x0255b81e6ec71ad6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x7d408c8b561c0ad1",
+    "start_time": "2026-10-17T12:30:51.276761Z",
+    "end_time": "2026-10-17T12:30:51.277490Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x63c93a3d6e75279016ebd97f81687d0c",
+        "span_id": "0x7d408c8b561c0ad1",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:29:09.770746Z",
+    "end_time": "2026-10-17T12:30:51.277537Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W4"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xdaf5e2aee4afaeab90adbafb46720105",
+        "span_id": "0xf7cf8936d3588e95",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x1e9bd785553dd799",
+    "start_time": "2026-10-17T12:30:51.283971Z",
+    "end_time": "2026-10-17T12:31:12.175423Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xdaf5e2aee4afaeab90adbafb46720105",
+        "span_id": "0x48266b058360a9f4",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x1e9bd785553dd799",
+    "start_time": "2026-10-17T12:31:12.175665Z",
+    "end_time": "2026-10-17T12:31:12.176030Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xdaf5e2aee4afaeab90adbafb46720105",
+        "span_id": "0x1e9bd785553dd799",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:30:51.283845Z",
+    "end_time": "2026-10-17T12:31:12.176076Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W5"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x2c7e541b497c8aa677784bd23ec7837a",
+        "span_id": "0xa41c68c56666adcb",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xd97433b67e9b7254",
+    "start_time": "2026-10-17T12:31:12.184713Z",
+    "end_time": "2026-10-17T12:31:54.999323Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x2c7e541b497c8aa677784bd23ec7837a",
+        "span_id": "0x82034432aea23297",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xd97433b67e9b7254",
+    "start_time": "2026-10-17T12:31:54.999783Z",
+    "end_time": "2026-10-17T12:31:55.001378Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x2c7e541b497c8aa677784bd23ec7837a",
+        "span_id": "0xd97433b67e9b7254",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:31:12.184621Z",
+    "end_time": "2026-10-17T12:31:55.001462Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W6"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xe1becbfd48efdf018550129aad30cae0",
+        "span_id": "0x410da76bce9fe6e4",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xed9285619bbd2018",
+    "start_time": "2026-10-17T12:31:55.014409Z",
+    "end_time": "2026-10-17T12:32:42.386141Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xe1becbfd48efdf018550129aad30cae0",
+        "span_id": "0xe8cf15ce7017e14c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xed9285619bbd2018",
+    "start_time": "2026-10-17T12:32:42.386311Z",
+    "end_time": "2026-10-17T12:32:42.386660Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xe1becbfd48efdf018550129aad30cae0",
+        "span_id": "0xed9285619bbd2018",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:31:55.013814Z",
+    "end_time": "2026-10-17T12:32:42.386687Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W7"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xddb8eab0c833bb824322af1d02485aa1",
+        "span_id": "0xba31a8e30963ba2e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xea0e071f56a92cb2",
+    "start_time": "2026-10-17T12:32:42.392696Z",
+    "end_time": "2026-10-17T12:32:53.653677Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xddb8eab0c833bb824322af1d02485aa1",
+        "span_id": "0x9d00fa819d5b0599",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xea0e071f56a92cb2",
+    "start_time": "2026-10-17T12:32:53.653885Z",
+    "end_time": "2026-10-17T12:32:53.654390Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xddb8eab0c833bb824322af1d02485aa1",
+        "span_id": "0xea0e071f56a92cb2",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:32:42.392587Z",
+    "end_time": "2026-10-17T12:32:53.654426Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W8"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x5ad90b685bf6fba79f7b5664766705f1",
+        "span_id": "0x978b80a480d3816c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x34cb57a2cecf1b23",
+    "start_time": "2026-10-17T12:32:53.658172Z",
+    "end_time": "2026-10-17T12:33:26.118593Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x5ad90b685bf6fba79f7b5664766705f1",
+        "span_id": "0x43ac6c437dcd325e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x34cb57a2cecf1b23",
+    "start_time": "2026-10-17T12:33:26.119206Z",
+    "end_time": "2026-10-17T12:33:26.120126Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x5ad90b685bf6fba79f7b5664766705f1",
+        "span_id": "0x34cb57a2cecf1b23",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:32:53.658051Z",
+    "end_time": "2026-10-17T12:33:26.120182Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W9"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x013ac19472b61d52d206e308c7f13b85",
+        "span_id": "0xba6a8120450926e0",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x71acd9036c36590d",
+    "start_time": "2026-10-17T12:33:26.125525Z",
+    "end_time": "2026-10-17T12:33:45.539265Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x013ac19472b61d52d206e308c7f13b85",
+        "span_id": "0xb575fb55b8733e73",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x71acd9036c36590d",
+    "start_time": "2026-10-17T12:33:45.540000Z",
+    "end_time": "2026-10-17T12:33:45.541762Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x013ac19472b61d52d206e308c7f13b85",
+        "span_id": "0x71acd9036c36590d",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:33:26.125313Z",
+    "end_time": "2026-10-17T12:33:45.541849Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W10"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x67e69034108930f89f7834820060fde1",
+        "span_id": "0xe64c88fd0b6a30b0",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x653c799b9ba656dd",
+    "start_time": "2026-10-17T12:33:45.584648Z",
+    "end_time": "2026-10-17T12:34:35.473265Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x67e69034108930f89f7834820060fde1",
+        "span_id": "0x0861d86638e03518",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x653c799b9ba656dd",
+    "start_time": "2026-10-17T12:34:35.473402Z",
+    "end_time": "2026-10-17T12:34:35.474069Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x67e69034108930f89f7834820060fde1",
+        "span_id": "0x653c799b9ba656dd",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:33:45.584407Z",
+    "end_time": "2026-10-17T12:34:35.474097Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W11"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 18:04:56,304 vlm INFO EOS intel_people-detection
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x863f8b0047d68524eefaf321264001c5",
+        "span_id": "0xbedc51420e516eb1",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xa39cdbf8465b6dae",
+    "start_time": "2026-10-17T12:34:35.477105Z",
+    "end_time": "2026-10-17T12:34:56.226964Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x863f8b0047d68524eefaf321264001c5",
+        "span_id": "0x7b305771c0455d44",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xa39cdbf8465b6dae",
+    "start_time": "2026-10-17T12:34:56.227196Z",
+    "end_time": "2026-10-17T12:34:56.227620Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x863f8b0047d68524eefaf321264001c5",
+        "span_id": "0xa39cdbf8465b6dae",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:34:35.477002Z",
+    "end_time": "2026-10-17T12:34:56.227649Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_people-detection/W12"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x79789ae2a7a00b394646a14374ce99bb",
+        "span_id": "0xaa1cf36034f16168",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x885c82fc9e2fccea",
+    "start_time": "2026-10-17T12:34:56.312230Z",
+    "end_time": "2026-10-17T12:35:57.591233Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x79789ae2a7a00b394646a14374ce99bb",
+        "span_id": "0x9f5aec25a47a7c54",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x885c82fc9e2fccea",
+    "start_time": "2026-10-17T12:35:57.591386Z",
+    "end_time": "2026-10-17T12:35:57.596561Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x79789ae2a7a00b394646a14374ce99bb",
+        "span_id": "0x885c82fc9e2fccea",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:34:56.312072Z",
+    "end_time": "2026-10-17T12:35:57.596645Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_person-bicycle-car-detection/W1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x16e9cae219e0b15dd3550d7a86da2fcb",
+        "span_id": "0x003108186b46e71b",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xe6255da56a67f9d6",
+    "start_time": "2026-10-17T12:35:57.607841Z",
+    "end_time": "2026-10-17T12:38:12.409310Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x16e9cae219e0b15dd3550d7a86da2fcb",
+        "span_id": "0x93730635aed3770e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xe6255da56a67f9d6",
+    "start_time": "2026-10-17T12:38:12.409547Z",
+    "end_time": "2026-10-17T12:38:12.413418Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x16e9cae219e0b15dd3550d7a86da2fcb",
+        "span_id": "0xe6255da56a67f9d6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:35:57.607704Z",
+    "end_time": "2026-10-17T12:38:12.413478Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_person-bicycle-car-detection/W2"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+%3|1792240742.483|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2045ms in state CONNECT)
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x00194f7494a43239af443aaa33761d73",
+        "span_id": "0xa08a53d380936243",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xc241503e03e23f0d",
+    "start_time": "2026-10-17T12:38:12.422200Z",
+    "end_time": "2026-10-17T12:40:44.447314Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x00194f7494a43239af443aaa33761d73",
+        "span_id": "0x8d57b0f56a8162ce",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xc241503e03e23f0d",
+    "start_time": "2026-10-17T12:40:44.447804Z",
+    "end_time": "2026-10-17T12:40:44.449538Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x00194f7494a43239af443aaa33761d73",
+        "span_id": "0xc241503e03e23f0d",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:38:12.422086Z",
+    "end_time": "2026-10-17T12:40:44.449613Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_person-bicycle-car-detection/W3"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xfeb84ba966cb7ec458a8c3833c7e8bae",
+        "span_id": "0xd10d4b8d16060d1c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xdac67a752c08cb1f",
+    "start_time": "2026-10-17T12:40:44.466987Z",
+    "end_time": "2026-10-17T12:43:32.262667Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xfeb84ba966cb7ec458a8c3833c7e8bae",
+        "span_id": "0xa1d1510c3b134147",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xdac67a752c08cb1f",
+    "start_time": "2026-10-17T12:43:32.268709Z",
+    "end_time": "2026-10-17T12:43:32.273393Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xfeb84ba966cb7ec458a8c3833c7e8bae",
+        "span_id": "0xdac67a752c08cb1f",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:40:44.466770Z",
+    "end_time": "2026-10-17T12:43:32.273480Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_person-bicycle-car-detection/W4"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x2040b19bd3a03cdceaa246fdfa1a68e8",
+        "span_id": "0xadf0ba136aedfc6d",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xd72f7103d2d09770",
+    "start_time": "2026-10-17T12:43:32.292928Z",
+    "end_time": "2026-10-17T12:45:08.750431Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x2040b19bd3a03cdceaa246fdfa1a68e8",
+        "span_id": "0xb12dc984887c6308",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xd72f7103d2d09770",
+    "start_time": "2026-10-17T12:45:08.759354Z",
+    "end_time": "2026-10-17T12:45:08.770893Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x2040b19bd3a03cdceaa246fdfa1a68e8",
+        "span_id": "0xd72f7103d2d09770",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:43:32.292653Z",
+    "end_time": "2026-10-17T12:45:08.771110Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_person-bicycle-car-detection/W5"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x043ab655ae8dad8e1a5f1308a497b963",
+        "span_id": "0xf9655fca5b12a7da",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xe61df8e0904b0592",
+    "start_time": "2026-10-17T12:45:08.790670Z",
+    "end_time": "2026-10-17T12:46:29.010655Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x043ab655ae8dad8e1a5f1308a497b963",
+        "span_id": "0x7ca18e71c2782474",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xe61df8e0904b0592",
+    "start_time": "2026-10-17T12:46:29.010838Z",
+    "end_time": "2026-10-17T12:46:29.011707Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x043ab655ae8dad8e1a5f1308a497b963",
+        "span_id": "0xe61df8e0904b0592",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:45:08.789953Z",
+    "end_time": "2026-10-17T12:46:29.011753Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_person-bicycle-car-detection/W6"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+%3|1792241345.118|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2044ms in state CONNECT)
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0x4d7784f905951ffc2cc5a1e025fd1e18",
+        "span_id": "0x1c6e2c9e65e5a8ae",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xe0740ffdd5d5b74a",
+    "start_time": "2026-10-17T12:46:29.018959Z",
+    "end_time": "2026-10-17T12:49:04.246523Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0x4d7784f905951ffc2cc5a1e025fd1e18",
+        "span_id": "0x47047fd9aae3a898",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xe0740ffdd5d5b74a",
+    "start_time": "2026-10-17T12:49:04.247213Z",
+    "end_time": "2026-10-17T12:49:04.249765Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0x4d7784f905951ffc2cc5a1e025fd1e18",
+        "span_id": "0xe0740ffdd5d5b74a",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:46:29.018838Z",
+    "end_time": "2026-10-17T12:49:04.249830Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_person-bicycle-car-detection/W7"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xd856e5320c2573cd265132976a77c078",
+        "span_id": "0x3be98485e3f74fd0",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x1308fb4a20b378b8",
+    "start_time": "2026-10-17T12:49:04.276006Z",
+    "end_time": "2026-10-17T12:50:41.568471Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xd856e5320c2573cd265132976a77c078",
+        "span_id": "0xb9d7118912a8bc32",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x1308fb4a20b378b8",
+    "start_time": "2026-10-17T12:50:41.568770Z",
+    "end_time": "2026-10-17T12:50:41.569704Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xd856e5320c2573cd265132976a77c078",
+        "span_id": "0x1308fb4a20b378b8",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:49:04.275781Z",
+    "end_time": "2026-10-17T12:50:41.569752Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_person-bicycle-car-detection/W8"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+2026-10-17 18:23:24,888 vlm INFO EOS intel_person-bicycle-car-detection
+2026-10-17 18:23:25,120 vlm WARNING kafka error: KafkaError{code=_MAX_POLL_EXCEEDED,val=-147,str="Application maximum poll interval (300000ms) exceeded by 141ms"}
+{
+    "name": "extract",
+    "context": {
+        "trace_id": "0xa69f1de2bd7da8f480a1077bf2793bd2",
+        "span_id": "0x8234468cd0121658",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x74406aa89b7919e5",
+    "start_time": "2026-10-17T12:50:41.593060Z",
+    "end_time": "2026-10-17T12:53:24.774331Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "kg_update",
+    "context": {
+        "trace_id": "0xa69f1de2bd7da8f480a1077bf2793bd2",
+        "span_id": "0x507311c76b2789fb",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x74406aa89b7919e5",
+    "start_time": "2026-10-17T12:53:24.781729Z",
+    "end_time": "2026-10-17T12:53:24.803993Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "window",
+    "context": {
+        "trace_id": "0xa69f1de2bd7da8f480a1077bf2793bd2",
+        "span_id": "0x74406aa89b7919e5",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-10-17T12:50:41.592949Z",
+    "end_time": "2026-10-17T12:53:24.804074Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "window.id": "intel_person-bicycle-car-detection/W9"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.37.0",
+            "service.name": "xstream-vlm"
+        },
+        "schema_url": ""
+    }
+}

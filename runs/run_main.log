@@ -1,0 +1,41 @@
+%3|1792237908.058|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2049ms in state CONNECT)
+%3|1792237910.185|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2031ms in state CONNECT)
+%3|1792237912.670|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2027ms in state CONNECT)
+%3|1792237914.822|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2024ms in state CONNECT)
+%3|1792237916.992|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2038ms in state CONNECT)
+WARNING: UCF-Crime test videos not on disk -> FALLBACK to the 16 dev clips
+[  619.2s] detected cctv_compilation_acc_ved (1/16)
+[ 1024.5s] detected cctv_intersection_cr (2/16)
+[ 1257.9s] detected dashcam_collision_with_motorcycle_1 (3/16)
+[ 1531.1s] detected dashcam_faizy_sample_traffic (4/16)
+[ 2000.5s] detected dashcam_faizy_sample_traffic_2 (5/16)
+[ 2105.3s] detected dashcam_head_on_collision_10 (6/16)
+[ 2204.6s] detected dashcam_head_on_collision_109 (7/16)
+[ 2336.3s] detected dashcam_head_on_collision_114 (8/16)
+[ 2440.3s] detected dashcam_rollover_1 (9/16)
+[ 2557.2s] detected dashcam_rollover_106 (10/16)
+[ 2765.4s] detected dashcam_rollover_121 (11/16)
+[ 3001.6s] detected news_fire_or_explosions_20 (12/16)
+[ 3131.0s] detected dashcam_negative_samples_10 (13/16)
+[ 4159.3s] detected intel_car-detection (14/16)
+B3 run finished at Sat, Oct 17, 2026  6:46:26 PM
+%3|1792242993.675|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2031ms in state CONNECT)
+%3|1792242995.824|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2039ms in state CONNECT)
+%3|1792242998.430|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2016ms in state CONNECT)
+%3|1792243000.523|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2028ms in state CONNECT)
+%3|1792243002.795|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2052ms in state CONNECT)
+WARNING: UCF-Crime test videos not on disk -> FALLBACK to the 16 dev clips
+service(s) died: ['signal_svc', 'vlm_kg_svc']; see C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\runs\b1-main\logs
+run b1-main: INCOMPLETE in 161s -> C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\runs\b1-main
+run b1 incomplete
+{
+  "a_only": 0,
+  "b_only": 0,
+  "p_value": 1.0,
+  "a": "b1-main",
+  "b": "b3-main",
+  "n": 0
+}
+figures in C:\Users\rupsi\OneDrive\Desktop\Projects\streaming_rag\report\figures | configs with results: []
+runs\b3-main\signal.png
+ALL DONE at Sat, Oct 17, 2026  6:49:33 PM

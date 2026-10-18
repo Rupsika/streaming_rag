@@ -1,0 +1,30 @@
+2026-10-17 21:52:08,538 xstream.telemetry metrics for producer on :8001/metrics
+%3|1792254130.560|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2022ms in state CONNECT)
+%3|1792254132.687|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2018ms in state CONNECT)
+2026-10-17 21:52:13,367 producer cctv_compilation_acc_ved: 300 frames, video_ts=10.0s, wall=0.6s
+2026-10-17 21:52:13,881 producer cctv_compilation_acc_ved: 600 frames, video_ts=20.0s, wall=1.1s
+2026-10-17 21:52:14,402 producer cctv_compilation_acc_ved: 900 frames, video_ts=30.0s, wall=1.6s
+%3|1792254134.803|FAIL|rdkafka#producer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2026ms in state CONNECT)
+2026-10-17 21:52:14,838 producer cctv_compilation_acc_ved: 1200 frames, video_ts=40.0s, wall=2.1s
+2026-10-17 21:52:15,225 producer cctv_compilation_acc_ved: 1500 frames, video_ts=50.0s, wall=2.4s
+2026-10-17 21:52:15,612 producer cctv_compilation_acc_ved: 1800 frames, video_ts=60.0s, wall=2.8s
+2026-10-17 21:52:16,009 producer cctv_compilation_acc_ved: 2100 frames, video_ts=70.0s, wall=3.2s
+%3|1792254136.939|FAIL|rdkafka#producer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2054ms in state CONNECT)
+2026-10-17 21:52:18,716 producer done cctv_compilation_acc_ved: 2298 frames | video 76.60s @ 30.00 native fps | wall 5.94s | achieved 386.93 fps (target max) | run_id=b1-main
+2026-10-17 21:52:21,340 producer cctv_intersection_cr: 300 frames, video_ts=10.0s, wall=2.6s
+2026-10-17 21:52:22,119 producer done cctv_intersection_cr: 394 frames | video 13.15s @ 29.97 native fps | wall 3.40s | achieved 115.77 fps (target max) | run_id=b1-main
+2026-10-17 21:52:22,904 producer done dashcam_collision_with_motorcycle_1: 170 frames | video 5.67s @ 30.00 native fps | wall 0.78s | achieved 216.62 fps (target max) | run_id=b1-main
+2026-10-17 21:52:24,133 producer dashcam_faizy_sample_traffic: 300 frames, video_ts=10.0s, wall=1.2s
+2026-10-17 21:52:24,349 producer done dashcam_faizy_sample_traffic: 356 frames | video 11.87s @ 30.00 native fps | wall 1.44s | achieved 246.50 fps (target max) | run_id=b1-main
+2026-10-17 21:52:25,576 producer dashcam_faizy_sample_traffic_2: 300 frames, video_ts=10.0s, wall=1.2s
+2026-10-17 21:52:26,556 producer done dashcam_faizy_sample_traffic_2: 518 frames | video 17.27s @ 30.00 native fps | wall 2.21s | achieved 234.64 fps (target max) | run_id=b1-main
+2026-10-17 21:52:27,166 producer done dashcam_head_on_collision_10: 157 frames | video 5.24s @ 29.97 native fps | wall 0.61s | achieved 257.78 fps (target max) | run_id=b1-main
+2026-10-17 21:52:27,633 producer done dashcam_head_on_collision_109: 90 frames | video 3.02s @ 29.83 native fps | wall 0.47s | achieved 192.71 fps (target max) | run_id=b1-main
+2026-10-17 21:52:28,498 producer done dashcam_head_on_collision_114: 186 frames | video 6.20s @ 30.00 native fps | wall 0.86s | achieved 215.18 fps (target max) | run_id=b1-main
+2026-10-17 21:52:29,231 producer done dashcam_rollover_1: 170 frames | video 5.67s @ 30.00 native fps | wall 0.73s | achieved 231.80 fps (target max) | run_id=b1-main
+2026-10-17 21:52:29,748 producer done dashcam_rollover_106: 133 frames | video 4.43s @ 30.00 native fps | wall 0.52s | achieved 257.41 fps (target max) | run_id=b1-main
+2026-10-17 21:52:30,690 producer done dashcam_rollover_121: 153 frames | video 5.10s @ 30.00 native fps | wall 0.94s | achieved 162.54 fps (target max) | run_id=b1-main
+2026-10-17 21:52:32,202 producer done news_fire_or_explosions_20: 170 frames | video 5.67s @ 29.97 native fps | wall 1.51s | achieved 112.41 fps (target max) | run_id=b1-main
+2026-10-17 21:52:34,301 producer done dashcam_negative_samples_10: 224 frames | video 7.47s @ 30.00 native fps | wall 2.10s | achieved 106.74 fps (target max) | run_id=b1-main
+2026-10-17 21:52:36,157 producer intel_car-detection: 300 frames, video_ts=23.9s, wall=1.9s
+2026-10-17 21:52:36,622 producer done intel_car-detection: 377 frames | video 30.16s @ 12.50 native fps | wall 2.32s | achieved 162.45 fps (target max) | run_id=b1-main

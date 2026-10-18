@@ -1,0 +1,33 @@
+%3|1792254130.847|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2037ms in state CONNECT)
+%3|1792254132.982|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2040ms in state CONNECT)
+2026-10-17 21:52:13,032 windowing INFO metrics for windowing on :8003/metrics
+2026-10-17 21:52:13,034 windowing INFO consuming ['b1-main-215155.frames.signal'] -> b1-main-215155.windows.keyframes
+%3|1792254135.043|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2026ms in state CONNECT)
+%3|1792254135.043|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2030ms in state CONNECT)
+%3|1792254137.150|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2037ms in state CONNECT)
+%3|1792254139.078|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2016ms in state CONNECT)
+%3|1792254139.246|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2008ms in state CONNECT)
+2026-10-17 21:53:33,044 windowing INFO EOS cctv_compilation_acc_ved
+2026-10-17 21:53:45,609 windowing INFO EOS cctv_intersection_cr
+2026-10-17 21:53:53,826 windowing INFO EOS dashcam_collision_with_motorcycle_1
+2026-10-17 21:54:09,285 windowing INFO EOS dashcam_faizy_sample_traffic
+2026-10-17 21:54:32,848 windowing INFO EOS dashcam_faizy_sample_traffic_2
+2026-10-17 21:54:40,998 windowing INFO EOS dashcam_head_on_collision_10
+2026-10-17 21:54:45,598 windowing INFO EOS dashcam_head_on_collision_109
+2026-10-17 21:54:54,420 windowing INFO EOS dashcam_head_on_collision_114
+2026-10-17 21:55:03,278 windowing INFO EOS dashcam_rollover_1
+2026-10-17 21:55:10,698 windowing INFO EOS dashcam_rollover_106
+2026-10-17 21:55:17,155 windowing INFO EOS dashcam_rollover_121
+2026-10-17 21:55:25,106 windowing INFO EOS news_fire_or_explosions_20
+2026-10-17 21:55:35,131 windowing INFO EOS dashcam_negative_samples_10
+2026-10-17 21:56:33,919 windowing INFO EOS intel_car-detection
+%3|1792256541.459|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2103ms in state CONNECT)
+%3|1792256543.840|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2027ms in state CONNECT)
+%3|1792256545.927|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2040ms in state CONNECT)
+%4|1792258470.848|SESSTMOUT|rdkafka#consumer-2| [thrd:main]: Consumer group session timed out (in join-state steady) after 177084 ms without a successful response from the group coordinator (broker 1, last error was Success): revoking assignment and rejoining group
+%5|1792258470.848|REQTMOUT|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out HeartbeatRequest in flight (after 174124ms, timeout #0)
+%4|1792258470.873|REQTMOUT|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%5|1792258470.878|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out FetchRequest in flight (after 176275ms, timeout #0)
+%4|1792258470.878|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1792258472.912|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2033ms in state CONNECT)
+%3|1792258474.939|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2027ms in state CONNECT, 1 identical error(s) suppressed)

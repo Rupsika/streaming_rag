@@ -1,0 +1,30 @@
+%3|1792254130.090|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2019ms in state CONNECT)
+%3|1792254132.165|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2020ms in state CONNECT)
+2026-10-17 21:52:12,254 signal INFO metrics for signal on :8002/metrics
+%3|1792254134.277|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2032ms in state CONNECT)
+%3|1792254134.277|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2031ms in state CONNECT)
+%3|1792254136.441|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2031ms in state CONNECT)
+%3|1792254138.297|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2027ms in state CONNECT)
+%3|1792254138.575|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2024ms in state CONNECT)
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+2026-10-17 21:52:30,114 signal INFO consuming ['b1-main-215155.frames.raw'] -> b1-main-215155.frames.signal
+2026-10-17 21:53:32,956 signal INFO EOS cctv_compilation_acc_ved
+2026-10-17 21:53:45,561 signal INFO EOS cctv_intersection_cr
+2026-10-17 21:53:53,802 signal INFO EOS dashcam_collision_with_motorcycle_1
+2026-10-17 21:54:09,270 signal INFO EOS dashcam_faizy_sample_traffic
+2026-10-17 21:54:32,699 signal INFO EOS dashcam_faizy_sample_traffic_2
+2026-10-17 21:54:40,831 signal INFO EOS dashcam_head_on_collision_10
+2026-10-17 21:54:45,466 signal INFO EOS dashcam_head_on_collision_109
+2026-10-17 21:54:54,292 signal INFO EOS dashcam_head_on_collision_114
+2026-10-17 21:55:03,203 signal INFO EOS dashcam_rollover_1
+2026-10-17 21:55:10,469 signal INFO EOS dashcam_rollover_106
+2026-10-17 21:55:17,006 signal INFO EOS dashcam_rollover_121
+2026-10-17 21:55:24,916 signal INFO EOS news_fire_or_explosions_20
+2026-10-17 21:55:35,109 signal INFO EOS dashcam_negative_samples_10
+2026-10-17 21:56:33,751 signal INFO EOS intel_car-detection
+%3|1792256541.585|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2043ms in state CONNECT)
+%3|1792256543.871|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2024ms in state CONNECT)
+%3|1792256545.947|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2012ms in state CONNECT)
+%4|1792258470.848|SESSTMOUT|rdkafka#consumer-2| [thrd:main]: Consumer group session timed out (in join-state steady) after 177741 ms without a successful response from the group coordinator (broker 1, last error was Success): revoking assignment and rejoining group
+%5|1792258470.884|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out FetchRequest in flight (after 176045ms, timeout #0)
+%4|1792258470.884|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests

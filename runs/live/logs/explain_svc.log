@@ -1,0 +1,26 @@
+%3|1792326026.319|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2038ms in state CONNECT)
+%3|1792326028.437|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2026ms in state CONNECT)
+2026-10-18 17:50:28,590 explain INFO metrics for explain on :8006/metrics
+%3|1792326030.592|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2037ms in state CONNECT)
+%3|1792326030.592|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2038ms in state CONNECT)
+%3|1792326032.922|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2029ms in state CONNECT)
+%3|1792326034.626|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2040ms in state CONNECT)
+%3|1792326035.058|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2035ms in state CONNECT)
+2026-10-18 17:51:16,704 explain INFO consuming ['events.detected'] -> events.explained
+%4|1792331544.517|SESSTMOUT|rdkafka#consumer-2| [thrd:main]: Consumer group session timed out (in join-state steady) after 201977 ms without a successful response from the group coordinator (broker 1, last error was Success): revoking assignment and rejoining group
+%5|1792331544.843|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out FetchRequest in flight (after 200962ms, timeout #0)
+%4|1792331544.851|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%5|1792331544.867|REQTMOUT|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out HeartbeatRequest in flight (after 199291ms, timeout #0)
+%4|1792331544.873|REQTMOUT|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%4|1792332467.403|SESSTMOUT|rdkafka#consumer-2| [thrd:main]: Consumer group session timed out (in join-state steady) after 653158 ms without a successful response from the group coordinator (broker 1, last error was Success): revoking assignment and rejoining group
+%5|1792332467.403|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out FetchRequest in flight (after 650376ms, timeout #0)
+%4|1792332467.403|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1792332469.455|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2052ms in state CONNECT)
+%3|1792332469.588|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2032ms in state CONNECT)
+%3|1792332471.490|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2033ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1792334658.136|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2186309ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1792334658.136|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2186577ms in state CONNECT)
+%5|1792344572.187|REQTMOUT|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out JoinGroupRequest in flight (after 12108928ms, timeout #0)
+%4|1792344572.187|REQTMOUT|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1792344574.695|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2507ms in state CONNECT)
+%3|1792344576.720|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2024ms in state CONNECT, 1 identical error(s) suppressed)

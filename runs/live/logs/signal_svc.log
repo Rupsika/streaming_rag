@@ -1,0 +1,24 @@
+%3|1792326035.477|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2045ms in state CONNECT)
+%3|1792326037.606|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2034ms in state CONNECT)
+2026-10-18 17:50:37,694 signal INFO metrics for signal on :8002/metrics
+%3|1792326039.701|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2018ms in state CONNECT)
+%3|1792326039.701|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2017ms in state CONNECT)
+%3|1792326041.861|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2041ms in state CONNECT)
+%3|1792326043.758|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2042ms in state CONNECT)
+%3|1792326044.000|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2049ms in state CONNECT)
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+2026-10-18 17:51:15,374 signal INFO consuming ['frames.raw'] -> frames.signal
+2026-10-18 17:53:34,824 signal INFO EOS cctv_compilation_acc_ved
+2026-10-18 18:02:17,059 signal INFO EOS dashcam_head_on_collision_10
+%4|1792331544.613|SESSTMOUT|rdkafka#consumer-2| [thrd:main]: Consumer group session timed out (in join-state steady) after 201354 ms without a successful response from the group coordinator (broker 1, last error was Success): revoking assignment and rejoining group
+%5|1792331544.819|REQTMOUT|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out HeartbeatRequest in flight (after 198523ms, timeout #0)
+%4|1792331544.837|REQTMOUT|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%5|1792331544.865|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out FetchRequest in flight (after 200806ms, timeout #0)
+%4|1792331544.871|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%4|1792334658.418|SESSTMOUT|rdkafka#consumer-2| [thrd:main]: Consumer group session timed out (in join-state steady) after 2187557 ms without a successful response from the group coordinator (broker 1, last error was Success): revoking assignment and rejoining group
+%5|1792334658.418|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out FetchRequest in flight (after 2186359ms, timeout #0)
+%4|1792334658.418|REQTMOUT|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%5|1792344572.353|REQTMOUT|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out JoinGroupRequest in flight (after 9919343ms, timeout #0)
+%4|1792344572.353|REQTMOUT|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1792344574.389|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2035ms in state CONNECT)
+%3|1792344576.408|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2021ms in state CONNECT, 1 identical error(s) suppressed)

@@ -17,8 +17,7 @@ cache/
 *.pt
 *.safetensors
 *.index
-runs/
+runs/.pids
 
-# copyrighted papers and course documents
+# copyrighted papers
 papers/*.pdf
-docs/

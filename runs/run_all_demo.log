@@ -1,0 +1,10 @@
+kafka up on localhost:19092; prometheus on localhost:9090
+%3|1792262668.568|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2047ms in state CONNECT)
+%3|1792262670.685|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2031ms in state CONNECT)
+started signal_svc (pid 2572)
+started windowing_svc (pid 2573)
+started vlm_kg_svc (pid 2574)
+started rag_svc (pid 2575)
+started explain_svc (pid 2576)
+all services up; logs in runs/live/logs. Replay with:
+  .venv/Scripts/python.exe scripts/replay_producer.py data/videos/accident/cctv_compilation_acc_ved.mp4

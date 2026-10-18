@@ -1,0 +1,23 @@
+%3|1792259276.779|FAIL|rdkafka#producer-1| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2026ms in state CONNECT)
+%3|1792259278.927|FAIL|rdkafka#producer-1| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2032ms in state CONNECT)
+2026-10-17 23:17:58,977 explain INFO metrics for explain on :8006/metrics
+2026-10-17 23:17:59,307 explain INFO consuming ['b1-main-215155.events.detected'] -> b1-main-215155.events.explained
+%3|1792259280.986|FAIL|rdkafka#producer-3| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2040ms in state CONNECT)
+%3|1792259280.986|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/bootstrap]: localhost:19092/bootstrap: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2042ms in state CONNECT)
+%3|1792259283.127|FAIL|rdkafka#consumer-2| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2020ms in state CONNECT)
+%3|1792259284.982|FAIL|rdkafka#producer-3| [thrd:localhost:19092/1]: localhost:19092/1: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2011ms in state CONNECT)
+%3|1792259285.268|FAIL|rdkafka#consumer-2| [thrd:GroupCoordinator]: GroupCoordinator: localhost:19092: Connect to ipv4#127.0.0.1:19092 failed: Unknown error (after 2024ms in state CONNECT)
+2026-10-17 23:18:05,759 explain INFO EOS cctv_compilation_acc_ved
+2026-10-17 23:18:05,892 explain INFO EOS cctv_intersection_cr
+2026-10-17 23:18:05,895 explain INFO EOS dashcam_collision_with_motorcycle_1
+2026-10-17 23:18:05,940 explain INFO EOS dashcam_faizy_sample_traffic
+2026-10-17 23:18:05,988 explain INFO EOS dashcam_faizy_sample_traffic_2
+2026-10-17 23:18:06,032 explain INFO EOS dashcam_head_on_collision_10
+2026-10-17 23:18:06,076 explain INFO EOS dashcam_head_on_collision_109
+2026-10-17 23:18:06,120 explain INFO EOS dashcam_head_on_collision_114
+2026-10-17 23:18:06,168 explain INFO EOS dashcam_rollover_1
+2026-10-17 23:18:06,212 explain INFO EOS dashcam_rollover_106
+2026-10-17 23:18:06,256 explain INFO EOS dashcam_rollover_121
+2026-10-17 23:18:06,304 explain INFO EOS news_fire_or_explosions_20
+2026-10-17 23:18:06,348 explain INFO EOS dashcam_negative_samples_10
+2026-10-17 23:18:06,613 explain INFO EOS intel_car-detection
